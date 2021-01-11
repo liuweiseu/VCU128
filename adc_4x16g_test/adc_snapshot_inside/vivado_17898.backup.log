@@ -1,0 +1,1158 @@
+#-----------------------------------------------------------
+# Vivado v2019.1.3 (64-bit)
+# SW Build 2644227 on Wed Sep  4 09:44:18 MDT 2019
+# IP Build 2633630 on Wed Sep  4 12:30:14 MDT 2019
+# Start of session at: Sat Jan  9 04:33:12 2021
+# Process ID: 17898
+# Current directory: /home/wei/casper/VCU128
+# Command line: vivado -jou /home/wei/casper/VCU128/adc_snapshot_inside/adc_snapshot_inside/vivado.jou -log /home/wei/casper/VCU128/adc_snapshot_inside/adc_snapshot_inside/vivado.log -mode batch -source /home/wei/casper/VCU128/adc_snapshot_inside/adc_snapshot_inside/gogogo.tcl
+# Log file: /home/wei/casper/VCU128/adc_snapshot_inside/adc_snapshot_inside/vivado.log
+# Journal file: /home/wei/casper/VCU128/adc_snapshot_inside/adc_snapshot_inside/vivado.jou
+#-----------------------------------------------------------
+WARNING: [Runs 36-547] Tool Strategy 'Vivado Implementation Defaults' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_Explore' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_ExplorePostRoutePhysOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_ExploreWithRemap' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_WLBlockPlacement' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_WLBlockPlacementFanoutOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_EarlyBlockPlacement' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_NetDelay_high' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_NetDelay_low' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_Retiming' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_ExtraTimingOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_RefinePlacement' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_SpreadSLLs' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_BalanceSLLs' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_BalanceSLRs' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_HighUtilSLRs' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_SpreadLogic_high' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_SpreadLogic_medium' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_SpreadLogic_low' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_SSI_SpreadLogic_high' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_SSI_SpreadLogic_low' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Area_Explore' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Area_ExploreSequential' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Area_ExploreWithRemap' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Power_DefaultOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Power_ExploreArea' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_RunPhysOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_RunPostRoutePhysOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_RuntimeOptimized' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_Quick' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Vivado Synthesis Defaults' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2016.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2016.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_AreaOptimized_high' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2016.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2016.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_AreaOptimized_medium' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2016.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2016.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_AreaMultThresholdDSP' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2016.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2016.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_AlternateRoutability' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2016.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2016.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_PerfOptimized_high' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2016.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2016.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_PerfThresholdCarry' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2016.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2016.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_RuntimeOptimized' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2016.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2016.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Vivado Implementation Defaults' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_Explore' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_ExplorePostRoutePhysOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_ExploreWithRemap' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_WLBlockPlacement' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_WLBlockPlacementFanoutOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_EarlyBlockPlacement' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_NetDelay_high' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_NetDelay_low' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_Retiming' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_ExtraTimingOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_RefinePlacement' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_SpreadSLLs' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_BalanceSLLs' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_BalanceSLRs' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_HighUtilSLRs' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_SpreadLogic_high' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_SpreadLogic_medium' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_SpreadLogic_low' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_SSI_SpreadLogic_high' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_SSI_SpreadLogic_low' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Area_Explore' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Area_ExploreSequential' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Area_ExploreWithRemap' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Power_DefaultOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Power_ExploreArea' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_RunPhysOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_RunPostRoutePhysOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_RuntimeOptimized' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_Quick' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Vivado Implementation Defaults' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_Explore' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_ExplorePostRoutePhysOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_RefinePlacement' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_WLBlockPlacement' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_WLBlockPlacementFanoutOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_LateBlockPlacement' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_NetDelay_high' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_NetDelay_medium' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_NetDelay_low' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_ExploreSLLs' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_Retiming' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Area_Explore' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Power_DefaultOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_RunPhysOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_RunPostRoutePhysOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_RuntimeOptimized' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_Quick' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_SpreadLogic_high' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_SpreadLogic_medium' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_SpreadLogic_low' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_SpreadLogicSLLs' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_BalanceSLLs' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_BalanceSLRs' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_CompressSLRs' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Vivado Synthesis Defaults' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2012.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2012.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Vivado Synthesis Defaults' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2013.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2013.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_RuntimeOptimized' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2013.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2013.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Vivado Synthesis Defaults' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_AreaOptimized_high' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_AreaOptimized_medium' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_AreaMultThresholdDSP' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2018.psg'
+INFO: [Common 17-14] Message 'Runs 36-547' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Runs 36-546] Tool Report Strategy 'Vivado Synthesis Default Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRS2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRS2019.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'No Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRS2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRS2019.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'Vivado Synthesis Default Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRS2017.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRS2017.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'No Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRS2017.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRS2017.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'Vivado Implementation Default Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2019.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'UltraFast Design Methodology Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2019.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'Performance Explore Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2019.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'Timing Closure Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2019.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'No Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2019.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'Vivado Synthesis Default Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRS2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRS2018.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'No Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRS2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRS2018.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'Vivado Implementation Default Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2018.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'UltraFast Design Methodology Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2018.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'Performance Explore Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2018.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'Timing Closure Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2018.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'No Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2018.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'Vivado Implementation Default Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2017.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2017.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'UltraFast Design Methodology Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2017.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2017.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'Performance Explore Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2017.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2017.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'Timing Closure Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2017.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2017.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'No Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2017.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2017.psg'
+source /home/wei/casper/VCU128/adc_snapshot_inside/adc_snapshot_inside/gogogo.tcl
+# puts "Starting tcl script"
+Starting tcl script
+# create_project -f myproj /home/wei/casper/VCU128/adc_snapshot_inside/adc_snapshot_inside/myproj -part xcvu37p-fsvh2892-2L-e
+# set_property target_language VHDL [current_project]
+# import_files -force /home/wei/casper/VCU128/adc_snapshot_inside/adc_snapshot_inside/top.v
+# import_files -force /home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/adc4x16g/ADC4X16G_Channel_Sel.v
+# import_files -force /home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/adc4x16g/data_splitter.v
+# import_files -force /home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/adc4x16g/wb_adc4x16g_controller.v
+# import_files -force /home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/gpio_simulink2ext
+# import_files -force /home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/onegbe/CRC_gen.v
+# import_files -force /home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/onegbe/gig_eth_mac_rx.v
+# import_files -force /home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/onegbe/CRC_chk.v
+# import_files -force /home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/onegbe/gbe_udp.v
+# import_files -force /home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/onegbe/gbe_cpu_attach_wb.v
+# import_files -force /home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/onegbe/gig_eth_mac_tx.v
+# import_files -force /home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/onegbe/gig_eth_mac.v
+# import_files -force /home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/onegbe/mdio_master.v
+# import_files -force /home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/onegbe/gbe_rx.v
+# import_files -force /home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/onegbe/gbe_tx.v
+# import_files -force /home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/onegbe/mdio_config.v
+# import_files -force /home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/onegbe/virtexuplushbm/gbe_cpu_buffer.xci
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'gbe_cpu_buffer' is locked:
+* IP definition 'Block Memory Generator (8.3)' for IP 'gbe_cpu_buffer' (customized with software release 2016.4) has a newer minor version in the IP Catalog. * IP definition 'Block Memory Generator (8.3)' for IP 'gbe_cpu_buffer' (customized with software release 2016.4) has a different revision in the IP Catalog. * Current project part 'xcvu37p-fsvh2892-2L-e' and the part 'xcvu9p-flga2104-2L-e-es1' used to customize the IP 'gbe_cpu_buffer' do not match.
+# import_files -force /home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/onegbe/virtexuplushbm/gbe_arp_cache.xci
+WARNING: [IP_Flow 19-2162] IP 'gbe_arp_cache' is locked:
+* IP definition 'Block Memory Generator (8.3)' for IP 'gbe_arp_cache' (customized with software release 2016.4) has a newer minor version in the IP Catalog. * IP definition 'Block Memory Generator (8.3)' for IP 'gbe_arp_cache' (customized with software release 2016.4) has a different revision in the IP Catalog. * Current project part 'xcvu37p-fsvh2892-2L-e' and the part 'xcvu9p-flga2104-2L-e-es1' used to customize the IP 'gbe_arp_cache' do not match.
+# import_files -force /home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/onegbe/virtexuplushbm/gbe_ctrl_fifo.xci
+WARNING: [IP_Flow 19-2162] IP 'gbe_ctrl_fifo' is locked:
+* IP definition 'FIFO Generator (13.1)' for IP 'gbe_ctrl_fifo' (customized with software release 2016.4) has a newer minor version in the IP Catalog. * IP definition 'FIFO Generator (13.1)' for IP 'gbe_ctrl_fifo' (customized with software release 2016.4) has a different revision in the IP Catalog. * Current project part 'xcvu37p-fsvh2892-2L-e' and the part 'xcvu9p-flga2104-2L-e-es1' used to customize the IP 'gbe_ctrl_fifo' do not match.
+# import_files -force /home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/onegbe/virtexuplushbm/gbe_rx_packet_fifo.xci
+WARNING: [IP_Flow 19-2162] IP 'gbe_rx_packet_fifo' is locked:
+* IP definition 'FIFO Generator (13.1)' for IP 'gbe_rx_packet_fifo' (customized with software release 2016.4) has a newer minor version in the IP Catalog. * IP definition 'FIFO Generator (13.1)' for IP 'gbe_rx_packet_fifo' (customized with software release 2016.4) has a different revision in the IP Catalog. * Current project part 'xcvu37p-fsvh2892-2L-e' and the part 'xcvu9p-flga2104-2L-e-es1' used to customize the IP 'gbe_rx_packet_fifo' do not match.
+# import_files -force /home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/onegbe/virtexuplushbm/gig_ethernet_pcs_pma_sgmii_lvds.xci
+WARNING: [IP_Flow 19-2162] IP 'gig_ethernet_pcs_pma_sgmii_lvds' is locked:
+* IP definition '1G/2.5G Ethernet PCS/PMA or SGMII (16.0)' for IP 'gig_ethernet_pcs_pma_sgmii_lvds' (customized with software release 2016.4) has a newer minor version in the IP Catalog. * Current project part 'xcvu37p-fsvh2892-2L-e' and the part 'xcvu9p-flga2104-2L-e-es1' used to customize the IP 'gig_ethernet_pcs_pma_sgmii_lvds' do not match.
+# import_files -force /home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/onegbe/virtexuplushbm/gbe_tx_packet_fifo.xci
+WARNING: [IP_Flow 19-2162] IP 'gbe_tx_packet_fifo' is locked:
+* IP definition 'FIFO Generator (13.1)' for IP 'gbe_tx_packet_fifo' (customized with software release 2016.4) has a newer minor version in the IP Catalog. * IP definition 'FIFO Generator (13.1)' for IP 'gbe_tx_packet_fifo' (customized with software release 2016.4) has a different revision in the IP Catalog. * Current project part 'xcvu37p-fsvh2892-2L-e' and the part 'xcvu9p-flga2104-2L-e-es1' used to customize the IP 'gbe_tx_packet_fifo' do not match.
+# import_files -force /home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/onegbe/virtexuplushbm/gbe_rx_ctrl_fifo.xci
+WARNING: [IP_Flow 19-2162] IP 'gbe_rx_ctrl_fifo' is locked:
+* IP definition 'FIFO Generator (13.1)' for IP 'gbe_rx_ctrl_fifo' (customized with software release 2016.4) has a newer minor version in the IP Catalog. * IP definition 'FIFO Generator (13.1)' for IP 'gbe_rx_ctrl_fifo' (customized with software release 2016.4) has a different revision in the IP Catalog. * Current project part 'xcvu37p-fsvh2892-2L-e' and the part 'xcvu9p-flga2104-2L-e-es1' used to customize the IP 'gbe_rx_ctrl_fifo' do not match.
+# import_files -force /home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/wb_register_ppc2simulink
+# import_files -force /home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/infrastructure/vcu128_infrastructure.v
+# import_files -force /home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/wbs_arbiter
+# import_files -force /home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/sys_block
+# import_files -force /home/wei/casper/VCU128/adc_snapshot_inside/adc_snapshot_inside/sysgen/hdl_netlist/adc_snapshot_inside.srcs/sources_1/imports/sysgen
+# set repos [get_property ip_repo_paths [current_project]]
+# set_property ip_repo_paths "$repos /home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/adc4x16g/ip_repo_0" [current_project]
+# update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/adc4x16g/ip_repo_0'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:gty_wrapper_0:2.0'. The one found in IP location '/home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/adc4x16g/ip_repo_0/adc16G4X_datarx' will take precedence over the same IP in location /home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/adc4x16g/ip_repo_0/adc4x16g_core/adc4x16g_core.srcs/sources_1/imports/adc16G4X_datarx
+# set repos [get_property ip_repo_paths [current_project]]
+# set_property ip_repo_paths "$repos /home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/axi_wb_bridge/ip_repo" [current_project]
+# update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/adc4x16g/ip_repo_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/axi_wb_bridge/ip_repo'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:gty_wrapper_0:2.0'. The one found in IP location '/home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/adc4x16g/ip_repo_0/adc16G4X_datarx' will take precedence over the same IP in location /home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/adc4x16g/ip_repo_0/adc4x16g_core/adc4x16g_core.srcs/sources_1/imports/adc16G4X_datarx
+# import_files -force -fileset constrs_1 /home/wei/casper/VCU128/adc_snapshot_inside/adc_snapshot_inside/user_const.xdc
+# set_property top top [current_fileset]
+# update_compile_order -fileset sources_1
+# if {[llength [glob -nocomplain [get_property directory [current_project]]/myproj.srcs/sources_1/imports/*.coe]] > 0} {
+# file copy -force {*}[glob [get_property directory [current_project]]/myproj.srcs/sources_1/imports/*.coe] [get_property directory [current_project]]/myproj.srcs/sources_1/ip/
+# }
+# upgrade_ip -quiet [get_ips *]
+# source /home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/adc4x16g/adc4x16g_core.tcl
+## namespace eval _tcl {
+## proc get_script_folder {} {
+##    set script_path [file normalize [info script]]
+##    set script_folder [file dirname $script_path]
+##    return $script_folder
+## }
+## }
+## variable script_folder
+## set script_folder [_tcl::get_script_folder]
+## set scripts_vivado_version 2019.1
+## set current_vivado_version [version -short]
+## if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
+##    puts ""
+##    catch {common::send_msg_id "BD_TCL-109" "ERROR" "This script was generated using Vivado <$scripts_vivado_version> and is being run in <$current_vivado_version> of Vivado. Please run the script in Vivado <$scripts_vivado_version> then open the design in Vivado <$current_vivado_version>. Upgrade the design by running \"Tools => Report => Report IP Status...\", then run write_bd_tcl to create an updated script."}
+## 
+##    return 1
+## }
+## set list_projs [get_projects -quiet]
+## if { $list_projs eq "" } {
+##    create_project project_1 myproj -part xcvu37p-fsvh2892-2L-e
+## }
+## variable design_name
+## set design_name adc4x16g_core
+## set errMsg ""
+## set nRet 0
+## set cur_design [current_bd_design -quiet]
+## set list_cells [get_bd_cells -quiet]
+## if { ${design_name} eq "" } {
+##    # USE CASES:
+##    #    1) Design_name not set
+## 
+##    set errMsg "Please set the variable <design_name> to a non-empty value."
+##    set nRet 1
+## 
+## } elseif { ${cur_design} ne "" && ${list_cells} eq "" } {
+##    # USE CASES:
+##    #    2): Current design opened AND is empty AND names same.
+##    #    3): Current design opened AND is empty AND names diff; design_name NOT in project.
+##    #    4): Current design opened AND is empty AND names diff; design_name exists in project.
+## 
+##    if { $cur_design ne $design_name } {
+##       common::send_msg_id "BD_TCL-001" "INFO" "Changing value of <design_name> from <$design_name> to <$cur_design> since current design is empty."
+##       set design_name [get_property NAME $cur_design]
+##    }
+##    common::send_msg_id "BD_TCL-002" "INFO" "Constructing design in IPI design <$cur_design>..."
+## 
+## } elseif { ${cur_design} ne "" && $list_cells ne "" && $cur_design eq $design_name } {
+##    # USE CASES:
+##    #    5) Current design opened AND has components AND same names.
+## 
+##    set errMsg "Design <$design_name> already exists in your project, please set the variable <design_name> to another value."
+##    set nRet 1
+## } elseif { [get_files -quiet ${design_name}.bd] ne "" } {
+##    # USE CASES: 
+##    #    6) Current opened design, has components, but diff names, design_name exists in project.
+##    #    7) No opened design, design_name exists in project.
+## 
+##    set errMsg "Design <$design_name> already exists in your project, please set the variable <design_name> to another value."
+##    set nRet 2
+## 
+## } else {
+##    # USE CASES:
+##    #    8) No opened design, design_name not in project.
+##    #    9) Current opened design, has components, but diff names, design_name not in project.
+## 
+##    common::send_msg_id "BD_TCL-003" "INFO" "Currently there is no design <$design_name> in project, so creating one..."
+## 
+##    create_bd_design $design_name
+## 
+##    common::send_msg_id "BD_TCL-004" "INFO" "Making design <$design_name> as current_bd_design."
+##    current_bd_design $design_name
+## 
+## }
+INFO: [BD_TCL-3] Currently there is no design <adc4x16g_core> in project, so creating one...
+Wrote  : </home/wei/casper/VCU128/adc_snapshot_inside/adc_snapshot_inside/myproj/myproj.srcs/sources_1/bd/adc4x16g_core/adc4x16g_core.bd> 
+INFO: [BD_TCL-4] Making design <adc4x16g_core> as current_bd_design.
+## common::send_msg_id "BD_TCL-005" "INFO" "Currently the variable <design_name> is equal to \"$design_name\"."
+INFO: [BD_TCL-5] Currently the variable <design_name> is equal to "adc4x16g_core".
+## if { $nRet != 0 } {
+##    catch {common::send_msg_id "BD_TCL-114" "ERROR" $errMsg}
+##    return $nRet
+## }
+## set bCheckIPsPassed 1
+## set bCheckIPs 1
+## if { $bCheckIPs == 1 } {
+##    set list_check_ips "\ 
+## xilinx.com:user:adc4x16g_core:1.3\
+## "
+## 
+##    set list_ips_missing ""
+##    common::send_msg_id "BD_TCL-006" "INFO" "Checking if the following IPs exist in the project's IP catalog: $list_check_ips ."
+## 
+##    foreach ip_vlnv $list_check_ips {
+##       set ip_obj [get_ipdefs -all $ip_vlnv]
+##       if { $ip_obj eq "" } {
+##          lappend list_ips_missing $ip_vlnv
+##       }
+##    }
+## 
+##    if { $list_ips_missing ne "" } {
+##       catch {common::send_msg_id "BD_TCL-115" "ERROR" "The following IPs are not found in the IP Catalog:\n  $list_ips_missing\n\nResolution: Please add the repository containing the IP(s) to the project." }
+##       set bCheckIPsPassed 0
+##    }
+## 
+## }
+INFO: [BD_TCL-6] Checking if the following IPs exist in the project's IP catalog:  
+xilinx.com:user:adc4x16g_core:1.3  .
+## if { $bCheckIPsPassed != 1 } {
+##   common::send_msg_id "BD_TCL-1003" "WARNING" "Will not continue with creation of design due to the error(s) above."
+##   return 3
+## }
+## proc create_root_design { parentCell } {
+## 
+##   variable script_folder
+##   variable design_name
+## 
+##   if { $parentCell eq "" } {
+##      set parentCell [get_bd_cells /]
+##   }
+## 
+##   # Get object for parentCell
+##   set parentObj [get_bd_cells $parentCell]
+##   if { $parentObj == "" } {
+##      catch {common::send_msg_id "BD_TCL-100" "ERROR" "Unable to find parent cell <$parentCell>!"}
+##      return
+##   }
+## 
+##   # Make sure parentObj is hier blk
+##   set parentType [get_property TYPE $parentObj]
+##   if { $parentType ne "hier" } {
+##      catch {common::send_msg_id "BD_TCL-101" "ERROR" "Parent <$parentObj> has TYPE = <$parentType>. Expected to be <hier>."}
+##      return
+##   }
+## 
+##   # Save current instance; Restore later
+##   set oldCurInst [current_bd_instance .]
+## 
+##   # Set parent object as current
+##   current_bd_instance $parentObj
+## 
+## 
+##   # Create interface ports
+## 
+##   # Create ports
+##   set XOR_ON [ create_bd_port -dir I XOR_ON ]
+##   set adc_clk [ create_bd_port -dir O -type clk adc_clk ]
+##   set bit_sel [ create_bd_port -dir I -from 1 -to 0 bit_sel ]
+##   set clk100 [ create_bd_port -dir I clk100 ]
+##   set clk_freerun [ create_bd_port -dir I clk_freerun ]
+##   set data_out [ create_bd_port -dir O -from 255 -to 0 data_out ]
+##   set drp_addr [ create_bd_port -dir I -from 9 -to 0 drp_addr ]
+##   set drp_data [ create_bd_port -dir O -from 15 -to 0 drp_data ]
+##   set drp_read [ create_bd_port -dir I drp_read ]
+##   set drp_reset [ create_bd_port -dir I -type rst drp_reset ]
+##   set fifo_empty [ create_bd_port -dir O fifo_empty ]
+##   set fifo_full [ create_bd_port -dir O fifo_full ]
+##   set fifo_read [ create_bd_port -dir I fifo_read ]
+##   set fifo_reset [ create_bd_port -dir I -type rst fifo_reset ]
+##   set gtwiz_reset_all_in [ create_bd_port -dir I gtwiz_reset_all_in ]
+##   set gty0rxn_in [ create_bd_port -dir I -from 3 -to 0 gty0rxn_in ]
+##   set gty0rxp_in [ create_bd_port -dir I -from 3 -to 0 gty0rxp_in ]
+##   set match_pattern [ create_bd_port -dir I -from 31 -to 0 match_pattern ]
+##   set pattern_match_enable [ create_bd_port -dir I pattern_match_enable ]
+##   set prbs_error_count_reset [ create_bd_port -dir I -type rst prbs_error_count_reset ]
+##   set refclk0_n [ create_bd_port -dir I refclk0_n ]
+##   set refclk0_p [ create_bd_port -dir I refclk0_p ]
+##   set rxcdrhold [ create_bd_port -dir I rxcdrhold ]
+##   set rxprbserr_out [ create_bd_port -dir O -from 3 -to 0 rxprbserr_out ]
+##   set rxprbslocked [ create_bd_port -dir O rxprbslocked ]
+##   set rxslide [ create_bd_port -dir I rxslide ]
+##   set write_interval [ create_bd_port -dir I -from 7 -to 0 write_interval ]
+## 
+##   # Create instance: adc4x16g_core_0, and set properties
+##   set adc4x16g_core_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:adc4x16g_core:1.3 adc4x16g_core_0 ]
+## 
+##   # Create port connections
+##   connect_bd_net -net XOR_ON_0_1 [get_bd_ports XOR_ON] [get_bd_pins adc4x16g_core_0/XOR_ON]
+##   connect_bd_net -net adc4x16g_core_0_adc_clk [get_bd_ports adc_clk] [get_bd_pins adc4x16g_core_0/adc_clk]
+##   connect_bd_net -net adc4x16g_core_0_data_out [get_bd_ports data_out] [get_bd_pins adc4x16g_core_0/data_out]
+##   connect_bd_net -net adc4x16g_core_0_drp_data [get_bd_ports drp_data] [get_bd_pins adc4x16g_core_0/drp_data]
+##   connect_bd_net -net adc4x16g_core_0_fifo_empty [get_bd_ports fifo_empty] [get_bd_pins adc4x16g_core_0/fifo_empty]
+##   connect_bd_net -net adc4x16g_core_0_fifo_full [get_bd_ports fifo_full] [get_bd_pins adc4x16g_core_0/fifo_full]
+##   connect_bd_net -net adc4x16g_core_0_rxprbserr_out [get_bd_ports rxprbserr_out] [get_bd_pins adc4x16g_core_0/rxprbserr_out]
+##   connect_bd_net -net adc4x16g_core_0_rxprbslocked [get_bd_ports rxprbslocked] [get_bd_pins adc4x16g_core_0/rxprbslocked]
+##   connect_bd_net -net bit_sel_0_1 [get_bd_ports bit_sel] [get_bd_pins adc4x16g_core_0/bit_sel]
+##   connect_bd_net -net clk100_0_1 [get_bd_ports clk100] [get_bd_pins adc4x16g_core_0/clk100]
+##   connect_bd_net -net clk_freerun_0_1 [get_bd_ports clk_freerun] [get_bd_pins adc4x16g_core_0/clk_freerun]
+##   connect_bd_net -net drp_addr_0_1 [get_bd_ports drp_addr] [get_bd_pins adc4x16g_core_0/drp_addr]
+##   connect_bd_net -net drp_read_0_1 [get_bd_ports drp_read] [get_bd_pins adc4x16g_core_0/drp_read]
+##   connect_bd_net -net drp_reset_0_1 [get_bd_ports drp_reset] [get_bd_pins adc4x16g_core_0/drp_reset]
+##   connect_bd_net -net fifo_read_0_1 [get_bd_ports fifo_read] [get_bd_pins adc4x16g_core_0/fifo_read]
+##   connect_bd_net -net fifo_reset_0_1 [get_bd_ports fifo_reset] [get_bd_pins adc4x16g_core_0/fifo_reset]
+##   connect_bd_net -net gtwiz_reset_all_in_0_1 [get_bd_ports gtwiz_reset_all_in] [get_bd_pins adc4x16g_core_0/gtwiz_reset_all_in]
+##   connect_bd_net -net gty0rxn_in_0_1 [get_bd_ports gty0rxn_in] [get_bd_pins adc4x16g_core_0/gty0rxn_in]
+##   connect_bd_net -net gty0rxp_in_0_1 [get_bd_ports gty0rxp_in] [get_bd_pins adc4x16g_core_0/gty0rxp_in]
+##   connect_bd_net -net match_pattern_0_1 [get_bd_ports match_pattern] [get_bd_pins adc4x16g_core_0/match_pattern]
+##   connect_bd_net -net pattern_match_enable_0_1 [get_bd_ports pattern_match_enable] [get_bd_pins adc4x16g_core_0/pattern_match_enable]
+##   connect_bd_net -net prbs_error_count_reset_0_1 [get_bd_ports prbs_error_count_reset] [get_bd_pins adc4x16g_core_0/prbs_error_count_reset]
+##   connect_bd_net -net refclk0_n_0_1 [get_bd_ports refclk0_n] [get_bd_pins adc4x16g_core_0/refclk0_n]
+##   connect_bd_net -net refclk0_p_0_1 [get_bd_ports refclk0_p] [get_bd_pins adc4x16g_core_0/refclk0_p]
+##   connect_bd_net -net rxcdrhold_0_1 [get_bd_ports rxcdrhold] [get_bd_pins adc4x16g_core_0/rxcdrhold]
+##   connect_bd_net -net rxslide_0_1 [get_bd_ports rxslide] [get_bd_pins adc4x16g_core_0/rxslide]
+##   connect_bd_net -net write_interval_0_1 [get_bd_ports write_interval] [get_bd_pins adc4x16g_core_0/write_interval]
+## 
+##   # Create address segments
+## 
+## 
+##   # Restore current instance
+##   current_bd_instance $oldCurInst
+## 
+##   save_bd_design
+## }
+## create_root_design ""
+Wrote  : </home/wei/casper/VCU128/adc_snapshot_inside/adc_snapshot_inside/myproj/myproj.srcs/sources_1/bd/adc4x16g_core/adc4x16g_core.bd> 
+## common::send_msg_id "BD_TCL-1000" "WARNING" "This Tcl script was generated from a block design that has not been validated. It is possible that design <$design_name> may result in errors during validation."
+WARNING: [BD_TCL-1000] This Tcl script was generated from a block design that has not been validated. It is possible that design <adc4x16g_core> may result in errors during validation.
+# source /home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/microblaze_wb/microblaze_wb_us_plus_hbm_vu_plus.tcl
+## namespace eval _tcl {
+## proc get_script_folder {} {
+##    set script_path [file normalize [info script]]
+##    set script_folder [file dirname $script_path]
+##    return $script_folder
+## }
+## }
+## variable script_folder
+## set script_folder [_tcl::get_script_folder]
+## set scripts_vivado_version 2019.1
+## set current_vivado_version [version -short]
+## if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
+##    puts ""
+##    catch {common::send_msg_id "BD_TCL-109" "ERROR" "This script was generated using Vivado <$scripts_vivado_version> and is being run in <$current_vivado_version> of Vivado. Please run the script in Vivado <$scripts_vivado_version> then open the design in Vivado <$current_vivado_version>. Upgrade the design by running \"Tools => Report => Report IP Status...\", then run write_bd_tcl to create an updated script."}
+## 
+##    return 1
+## }
+## set list_projs [get_projects -quiet]
+## if { $list_projs eq "" } {
+##    create_project project_1 myproj -part xcvu37p-fsvh2892-2L-e
+## }
+## variable design_name
+## set design_name cont_microblaze
+## set errMsg ""
+## set nRet 0
+## set cur_design [current_bd_design -quiet]
+## set list_cells [get_bd_cells -quiet]
+## if { ${design_name} eq "" } {
+##    # USE CASES:
+##    #    1) Design_name not set
+## 
+##    set errMsg "Please set the variable <design_name> to a non-empty value."
+##    set nRet 1
+## 
+## } elseif { ${cur_design} ne "" && ${list_cells} eq "" } {
+##    # USE CASES:
+##    #    2): Current design opened AND is empty AND names same.
+##    #    3): Current design opened AND is empty AND names diff; design_name NOT in project.
+##    #    4): Current design opened AND is empty AND names diff; design_name exists in project.
+## 
+##    if { $cur_design ne $design_name } {
+##       common::send_msg_id "BD_TCL-001" "INFO" "Changing value of <design_name> from <$design_name> to <$cur_design> since current design is empty."
+##       set design_name [get_property NAME $cur_design]
+##    }
+##    common::send_msg_id "BD_TCL-002" "INFO" "Constructing design in IPI design <$cur_design>..."
+## 
+## } elseif { ${cur_design} ne "" && $list_cells ne "" && $cur_design eq $design_name } {
+##    # USE CASES:
+##    #    5) Current design opened AND has components AND same names.
+## 
+##    set errMsg "Design <$design_name> already exists in your project, please set the variable <design_name> to another value."
+##    set nRet 1
+## } elseif { [get_files -quiet ${design_name}.bd] ne "" } {
+##    # USE CASES: 
+##    #    6) Current opened design, has components, but diff names, design_name exists in project.
+##    #    7) No opened design, design_name exists in project.
+## 
+##    set errMsg "Design <$design_name> already exists in your project, please set the variable <design_name> to another value."
+##    set nRet 2
+## 
+## } else {
+##    # USE CASES:
+##    #    8) No opened design, design_name not in project.
+##    #    9) Current opened design, has components, but diff names, design_name not in project.
+## 
+##    common::send_msg_id "BD_TCL-003" "INFO" "Currently there is no design <$design_name> in project, so creating one..."
+## 
+##    create_bd_design $design_name
+## 
+##    common::send_msg_id "BD_TCL-004" "INFO" "Making design <$design_name> as current_bd_design."
+##    current_bd_design $design_name
+## 
+## }
+INFO: [BD_TCL-3] Currently there is no design <cont_microblaze> in project, so creating one...
+Wrote  : </home/wei/casper/VCU128/adc_snapshot_inside/adc_snapshot_inside/myproj/myproj.srcs/sources_1/bd/cont_microblaze/cont_microblaze.bd> 
+INFO: [BD_TCL-4] Making design <cont_microblaze> as current_bd_design.
+## common::send_msg_id "BD_TCL-005" "INFO" "Currently the variable <design_name> is equal to \"$design_name\"."
+INFO: [BD_TCL-5] Currently the variable <design_name> is equal to "cont_microblaze".
+## if { $nRet != 0 } {
+##    catch {common::send_msg_id "BD_TCL-114" "ERROR" $errMsg}
+##    return $nRet
+## }
+## set bCheckIPsPassed 1
+## set bCheckIPs 1
+## if { $bCheckIPs == 1 } {
+##    set list_check_ips "\ 
+## xilinx.com:ip:axi_gpio:2.0\
+## xilinx.com:ip:axi_hwicap:3.0\
+## xilinx.com:ip:axi_quad_spi:3.2\
+## peralex.com:user:axi_slave_wishbone_classic_master:1.0\
+## xilinx.com:ip:axi_timebase_wdt:3.0\
+## xilinx.com:ip:axi_timer:2.0\
+## xilinx.com:ip:axi_uartlite:2.0\
+## xilinx.com:ip:mdm:3.2\
+## xilinx.com:ip:microblaze:11.0\
+## xilinx.com:ip:axi_intc:4.1\
+## xilinx.com:ip:proc_sys_reset:5.0\
+## xilinx.com:ip:xlconcat:2.1\
+## xilinx.com:ip:lmb_bram_if_cntlr:4.0\
+## xilinx.com:ip:lmb_v10:3.0\
+## xilinx.com:ip:blk_mem_gen:8.4\
+## "
+## 
+##    set list_ips_missing ""
+##    common::send_msg_id "BD_TCL-006" "INFO" "Checking if the following IPs exist in the project's IP catalog: $list_check_ips ."
+## 
+##    foreach ip_vlnv $list_check_ips {
+##       set ip_obj [get_ipdefs -all $ip_vlnv]
+##       if { $ip_obj eq "" } {
+##          lappend list_ips_missing $ip_vlnv
+##       }
+##    }
+## 
+##    if { $list_ips_missing ne "" } {
+##       catch {common::send_msg_id "BD_TCL-115" "ERROR" "The following IPs are not found in the IP Catalog:\n  $list_ips_missing\n\nResolution: Please add the repository containing the IP(s) to the project." }
+##       set bCheckIPsPassed 0
+##    }
+## 
+## }
+INFO: [BD_TCL-6] Checking if the following IPs exist in the project's IP catalog:  
+xilinx.com:ip:axi_gpio:2.0 xilinx.com:ip:axi_hwicap:3.0 xilinx.com:ip:axi_quad_spi:3.2 peralex.com:user:axi_slave_wishbone_classic_master:1.0 xilinx.com:ip:axi_timebase_wdt:3.0 xilinx.com:ip:axi_timer:2.0 xilinx.com:ip:axi_uartlite:2.0 xilinx.com:ip:mdm:3.2 xilinx.com:ip:microblaze:11.0 xilinx.com:ip:axi_intc:4.1 xilinx.com:ip:proc_sys_reset:5.0 xilinx.com:ip:xlconcat:2.1 xilinx.com:ip:lmb_bram_if_cntlr:4.0 xilinx.com:ip:lmb_v10:3.0 xilinx.com:ip:blk_mem_gen:8.4  .
+## if { $bCheckIPsPassed != 1 } {
+##   common::send_msg_id "BD_TCL-1003" "WARNING" "Will not continue with creation of design due to the error(s) above."
+##   return 3
+## }
+## proc create_hier_cell_microblaze_0_local_memory { parentCell nameHier } {
+## 
+##   variable script_folder
+## 
+##   if { $parentCell eq "" || $nameHier eq "" } {
+##      catch {common::send_msg_id "BD_TCL-102" "ERROR" "create_hier_cell_microblaze_0_local_memory() - Empty argument(s)!"}
+##      return
+##   }
+## 
+##   # Get object for parentCell
+##   set parentObj [get_bd_cells $parentCell]
+##   if { $parentObj == "" } {
+##      catch {common::send_msg_id "BD_TCL-100" "ERROR" "Unable to find parent cell <$parentCell>!"}
+##      return
+##   }
+## 
+##   # Make sure parentObj is hier blk
+##   set parentType [get_property TYPE $parentObj]
+##   if { $parentType ne "hier" } {
+##      catch {common::send_msg_id "BD_TCL-101" "ERROR" "Parent <$parentObj> has TYPE = <$parentType>. Expected to be <hier>."}
+##      return
+##   }
+## 
+##   # Save current instance; Restore later
+##   set oldCurInst [current_bd_instance .]
+## 
+##   # Set parent object as current
+##   current_bd_instance $parentObj
+## 
+##   # Create cell and set as current instance
+##   set hier_obj [create_bd_cell -type hier $nameHier]
+##   current_bd_instance $hier_obj
+## 
+##   # Create interface pins
+##   create_bd_intf_pin -mode MirroredMaster -vlnv xilinx.com:interface:lmb_rtl:1.0 DLMB
+## 
+##   create_bd_intf_pin -mode MirroredMaster -vlnv xilinx.com:interface:lmb_rtl:1.0 ILMB
+## 
+## 
+##   # Create pins
+##   create_bd_pin -dir I -type clk LMB_Clk
+##   create_bd_pin -dir I -from 0 -to 0 -type rst LMB_Rst
+## 
+##   # Create instance: dlmb_bram_if_cntlr, and set properties
+##   set dlmb_bram_if_cntlr [ create_bd_cell -type ip -vlnv xilinx.com:ip:lmb_bram_if_cntlr:4.0 dlmb_bram_if_cntlr ]
+##   set_property -dict [ list \
+##    CONFIG.C_ECC {0} \
+##  ] $dlmb_bram_if_cntlr
+## 
+##   # Create instance: dlmb_v10, and set properties
+##   set dlmb_v10 [ create_bd_cell -type ip -vlnv xilinx.com:ip:lmb_v10:3.0 dlmb_v10 ]
+## 
+##   # Create instance: ilmb_bram_if_cntlr, and set properties
+##   set ilmb_bram_if_cntlr [ create_bd_cell -type ip -vlnv xilinx.com:ip:lmb_bram_if_cntlr:4.0 ilmb_bram_if_cntlr ]
+##   set_property -dict [ list \
+##    CONFIG.C_ECC {0} \
+##  ] $ilmb_bram_if_cntlr
+## 
+##   # Create instance: ilmb_v10, and set properties
+##   set ilmb_v10 [ create_bd_cell -type ip -vlnv xilinx.com:ip:lmb_v10:3.0 ilmb_v10 ]
+## 
+##   # Create instance: lmb_bram, and set properties
+##   set lmb_bram [ create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.4 lmb_bram ]
+##   set_property -dict [ list \
+##    CONFIG.EN_SAFETY_CKT {false} \
+##    CONFIG.Enable_B {Use_ENB_Pin} \
+##    CONFIG.Memory_Type {True_Dual_Port_RAM} \
+##    CONFIG.Port_B_Clock {100} \
+##    CONFIG.Port_B_Enable_Rate {100} \
+##    CONFIG.Port_B_Write_Rate {50} \
+##    CONFIG.Use_RSTB_Pin {true} \
+##    CONFIG.use_bram_block {BRAM_Controller} \
+##  ] $lmb_bram
+## 
+##   # Create interface connections
+##   connect_bd_intf_net -intf_net microblaze_0_dlmb [get_bd_intf_pins DLMB] [get_bd_intf_pins dlmb_v10/LMB_M]
+##   connect_bd_intf_net -intf_net microblaze_0_dlmb_bus [get_bd_intf_pins dlmb_bram_if_cntlr/SLMB] [get_bd_intf_pins dlmb_v10/LMB_Sl_0]
+##   connect_bd_intf_net -intf_net microblaze_0_dlmb_cntlr [get_bd_intf_pins dlmb_bram_if_cntlr/BRAM_PORT] [get_bd_intf_pins lmb_bram/BRAM_PORTA]
+##   connect_bd_intf_net -intf_net microblaze_0_ilmb [get_bd_intf_pins ILMB] [get_bd_intf_pins ilmb_v10/LMB_M]
+##   connect_bd_intf_net -intf_net microblaze_0_ilmb_bus [get_bd_intf_pins ilmb_bram_if_cntlr/SLMB] [get_bd_intf_pins ilmb_v10/LMB_Sl_0]
+##   connect_bd_intf_net -intf_net microblaze_0_ilmb_cntlr [get_bd_intf_pins ilmb_bram_if_cntlr/BRAM_PORT] [get_bd_intf_pins lmb_bram/BRAM_PORTB]
+## 
+##   # Create port connections
+##   connect_bd_net -net microblaze_0_Clk [get_bd_pins LMB_Clk] [get_bd_pins dlmb_bram_if_cntlr/LMB_Clk] [get_bd_pins dlmb_v10/LMB_Clk] [get_bd_pins ilmb_bram_if_cntlr/LMB_Clk] [get_bd_pins ilmb_v10/LMB_Clk]
+##   connect_bd_net -net microblaze_0_LMB_Rst [get_bd_pins LMB_Rst] [get_bd_pins dlmb_bram_if_cntlr/LMB_Rst] [get_bd_pins dlmb_v10/SYS_Rst] [get_bd_pins ilmb_bram_if_cntlr/LMB_Rst] [get_bd_pins ilmb_v10/SYS_Rst]
+## 
+##   # Restore current instance
+##   current_bd_instance $oldCurInst
+## }
+## proc create_root_design { parentCell } {
+## 
+##   variable script_folder
+##   variable design_name
+## 
+##   if { $parentCell eq "" } {
+##      set parentCell [get_bd_cells /]
+##   }
+## 
+##   # Get object for parentCell
+##   set parentObj [get_bd_cells $parentCell]
+##   if { $parentObj == "" } {
+##      catch {common::send_msg_id "BD_TCL-100" "ERROR" "Unable to find parent cell <$parentCell>!"}
+##      return
+##   }
+## 
+##   # Make sure parentObj is hier blk
+##   set parentType [get_property TYPE $parentObj]
+##   if { $parentType ne "hier" } {
+##      catch {common::send_msg_id "BD_TCL-101" "ERROR" "Parent <$parentObj> has TYPE = <$parentType>. Expected to be <hier>."}
+##      return
+##   }
+## 
+##   # Save current instance; Restore later
+##   set oldCurInst [current_bd_instance .]
+## 
+##   # Set parent object as current
+##   current_bd_instance $parentObj
+## 
+## 
+##   # Create interface ports
+##   set ADC4X16G_CONFIG [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 ADC4X16G_CONFIG ]
+## 
+##   set ADC4X16G_DRP_CONFIG [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 ADC4X16G_DRP_CONFIG ]
+## 
+##   set ADC4X16G_DRP_DATA [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 ADC4X16G_DRP_DATA ]
+## 
+##   set ADC4X16G_MATCH_PATTERN [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 ADC4X16G_MATCH_PATTERN ]
+## 
+##   set UART [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:uart_rtl:1.0 UART ]
+## 
+## 
+##   # Create ports
+##   set ACK_I [ create_bd_port -dir I ACK_I ]
+##   set ADR_O [ create_bd_port -dir O -from 19 -to 0 ADR_O ]
+##   set CYC_O [ create_bd_port -dir O CYC_O ]
+##   set Clk [ create_bd_port -dir I -type clk Clk ]
+##   set_property -dict [ list \
+##    CONFIG.FREQ_HZ {100000000} \
+##  ] $Clk
+##   set DAT_I [ create_bd_port -dir I -from 31 -to 0 DAT_I ]
+##   set DAT_O [ create_bd_port -dir O -from 31 -to 0 DAT_O ]
+##   set MISO [ create_bd_port -dir I MISO ]
+##   set MOSI [ create_bd_port -dir O MOSI ]
+##   set RST_O [ create_bd_port -dir O RST_O ]
+##   set Reset [ create_bd_port -dir I -type rst Reset ]
+##   set_property -dict [ list \
+##    CONFIG.POLARITY {ACTIVE_HIGH} \
+##  ] $Reset
+##   set SCK [ create_bd_port -dir O SCK ]
+##   set SEL_O [ create_bd_port -dir O -from 3 -to 0 SEL_O ]
+##   set SSELb [ create_bd_port -dir O -from 3 -to 0 SSELb ]
+##   set STB_O [ create_bd_port -dir O STB_O ]
+##   set WE_O [ create_bd_port -dir O WE_O ]
+##   set dcm_locked [ create_bd_port -dir I dcm_locked ]
+##   set ext_intr [ create_bd_port -dir I -type intr ext_intr ]
+## 
+##   # Create instance: adc_config, and set properties
+##   set adc_config [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 adc_config ]
+##   set_property -dict [ list \
+##    CONFIG.C_ALL_OUTPUTS {1} \
+##  ] $adc_config
+## 
+##   # Create instance: axi_hwicap_0, and set properties
+##   set axi_hwicap_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_hwicap:3.0 axi_hwicap_0 ]
+##   set_property -dict [ list \
+##    CONFIG.C_ICAP_EXTERNAL {0} \
+##    CONFIG.C_INCLUDE_STARTUP {0} \
+##    CONFIG.C_MODE {0} \
+##    CONFIG.C_OPERATION {1} \
+##  ] $axi_hwicap_0
+## 
+##   # Create instance: axi_quad_spi_0, and set properties
+##   set axi_quad_spi_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_quad_spi:3.2 axi_quad_spi_0 ]
+##   set_property -dict [ list \
+##    CONFIG.C_NUM_SS_BITS {4} \
+##    CONFIG.C_NUM_TRANSFER_BITS {16} \
+##    CONFIG.C_USE_STARTUP {0} \
+##    CONFIG.C_USE_STARTUP_INT {0} \
+##    CONFIG.Multiples16 {4} \
+##  ] $axi_quad_spi_0
+## 
+##   # Create instance: axi_slave_wishbone_classic_master_0, and set properties
+##   set axi_slave_wishbone_classic_master_0 [ create_bd_cell -type ip -vlnv peralex.com:user:axi_slave_wishbone_classic_master:1.0 axi_slave_wishbone_classic_master_0 ]
+## 
+##   # Create instance: axi_timebase_wdt_0, and set properties
+##   set axi_timebase_wdt_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_timebase_wdt:3.0 axi_timebase_wdt_0 ]
+##   set_property -dict [ list \
+##    CONFIG.C_WDT_INTERVAL {29} \
+##  ] $axi_timebase_wdt_0
+## 
+##   # Create instance: axi_timer_0, and set properties
+##   set axi_timer_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_timer:2.0 axi_timer_0 ]
+## 
+##   # Create instance: axi_uartlite_0, and set properties
+##   set axi_uartlite_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_uartlite:2.0 axi_uartlite_0 ]
+##   set_property -dict [ list \
+##    CONFIG.C_BAUDRATE {115200} \
+##  ] $axi_uartlite_0
+## 
+##   # Create instance: drp_config, and set properties
+##   set drp_config [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 drp_config ]
+##   set_property -dict [ list \
+##    CONFIG.C_ALL_INPUTS_2 {1} \
+##    CONFIG.C_ALL_OUTPUTS {1} \
+##    CONFIG.C_IS_DUAL {1} \
+##  ] $drp_config
+## 
+##   # Create instance: match_pattern_config, and set properties
+##   set match_pattern_config [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 match_pattern_config ]
+##   set_property -dict [ list \
+##    CONFIG.C_ALL_OUTPUTS {1} \
+##  ] $match_pattern_config
+## 
+##   # Create instance: mdm_1, and set properties
+##   set mdm_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:mdm:3.2 mdm_1 ]
+##   set_property -dict [ list \
+##    CONFIG.C_USE_UART {0} \
+##  ] $mdm_1
+## 
+##   # Create instance: microblaze_0, and set properties
+##   set microblaze_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:microblaze:11.0 microblaze_0 ]
+##   set_property -dict [ list \
+##    CONFIG.C_DEBUG_ENABLED {1} \
+##    CONFIG.C_D_AXI {1} \
+##    CONFIG.C_D_LMB {1} \
+##    CONFIG.C_ICACHE_BASEADDR {0x0000000000000000} \
+##    CONFIG.C_ICACHE_HIGHADDR {0x000000003FFFFFFF} \
+##    CONFIG.C_I_LMB {1} \
+##  ] $microblaze_0
+## 
+##   # Create instance: microblaze_0_axi_intc, and set properties
+##   set microblaze_0_axi_intc [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_intc:4.1 microblaze_0_axi_intc ]
+##   set_property -dict [ list \
+##    CONFIG.C_HAS_FAST {1} \
+##    CONFIG.C_PROCESSOR_CLK_FREQ_MHZ {100} \
+##    CONFIG.C_S_AXI_ACLK_FREQ_MHZ {100} \
+##  ] $microblaze_0_axi_intc
+## 
+##   # Create instance: microblaze_0_axi_periph, and set properties
+##   set microblaze_0_axi_periph [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 microblaze_0_axi_periph ]
+##   set_property -dict [ list \
+##    CONFIG.NUM_MI {10} \
+##    CONFIG.SYNCHRONIZATION_STAGES {2} \
+##  ] $microblaze_0_axi_periph
+## 
+##   # Create instance: microblaze_0_local_memory
+##   create_hier_cell_microblaze_0_local_memory [current_bd_instance .] microblaze_0_local_memory
+## 
+##   # Create instance: rst_Clk_100M, and set properties
+##   set rst_Clk_100M [ create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 rst_Clk_100M ]
+##   set_property -dict [ list \
+##    CONFIG.C_AUX_RESET_HIGH {1} \
+##    CONFIG.C_AUX_RST_WIDTH {1} \
+##  ] $rst_Clk_100M
+## 
+##   # Create instance: xlconcat_0, and set properties
+##   set xlconcat_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconcat:2.1 xlconcat_0 ]
+##   set_property -dict [ list \
+##    CONFIG.NUM_PORTS {4} \
+##  ] $xlconcat_0
+## 
+##   # Create interface connections
+##   connect_bd_intf_net -intf_net adc_config_GPIO [get_bd_intf_ports ADC4X16G_CONFIG] [get_bd_intf_pins adc_config/GPIO]
+##   connect_bd_intf_net -intf_net axi_uartlite_0_UART [get_bd_intf_ports UART] [get_bd_intf_pins axi_uartlite_0/UART]
+##   connect_bd_intf_net -intf_net drp_config_GPIO [get_bd_intf_ports ADC4X16G_DRP_CONFIG] [get_bd_intf_pins drp_config/GPIO]
+##   connect_bd_intf_net -intf_net drp_config_GPIO2 [get_bd_intf_ports ADC4X16G_DRP_DATA] [get_bd_intf_pins drp_config/GPIO2]
+##   connect_bd_intf_net -intf_net match_pattern_config_GPIO [get_bd_intf_ports ADC4X16G_MATCH_PATTERN] [get_bd_intf_pins match_pattern_config/GPIO]
+##   connect_bd_intf_net -intf_net microblaze_0_axi_dp [get_bd_intf_pins microblaze_0/M_AXI_DP] [get_bd_intf_pins microblaze_0_axi_periph/S00_AXI]
+##   connect_bd_intf_net -intf_net microblaze_0_axi_periph_M01_AXI [get_bd_intf_pins axi_uartlite_0/S_AXI] [get_bd_intf_pins microblaze_0_axi_periph/M01_AXI]
+##   connect_bd_intf_net -intf_net microblaze_0_axi_periph_M02_AXI [get_bd_intf_pins axi_timebase_wdt_0/S_AXI] [get_bd_intf_pins microblaze_0_axi_periph/M02_AXI]
+##   connect_bd_intf_net -intf_net microblaze_0_axi_periph_M03_AXI [get_bd_intf_pins axi_slave_wishbone_classic_master_0/S_AXI] [get_bd_intf_pins microblaze_0_axi_periph/M03_AXI]
+##   connect_bd_intf_net -intf_net microblaze_0_axi_periph_M04_AXI [get_bd_intf_pins axi_timer_0/S_AXI] [get_bd_intf_pins microblaze_0_axi_periph/M04_AXI]
+##   connect_bd_intf_net -intf_net microblaze_0_axi_periph_M05_AXI [get_bd_intf_pins axi_quad_spi_0/AXI_LITE] [get_bd_intf_pins microblaze_0_axi_periph/M05_AXI]
+##   connect_bd_intf_net -intf_net microblaze_0_axi_periph_M06_AXI [get_bd_intf_pins adc_config/S_AXI] [get_bd_intf_pins microblaze_0_axi_periph/M06_AXI]
+##   connect_bd_intf_net -intf_net microblaze_0_axi_periph_M07_AXI [get_bd_intf_pins axi_hwicap_0/S_AXI_LITE] [get_bd_intf_pins microblaze_0_axi_periph/M07_AXI]
+##   connect_bd_intf_net -intf_net microblaze_0_axi_periph_M08_AXI [get_bd_intf_pins match_pattern_config/S_AXI] [get_bd_intf_pins microblaze_0_axi_periph/M08_AXI]
+##   connect_bd_intf_net -intf_net microblaze_0_axi_periph_M09_AXI [get_bd_intf_pins drp_config/S_AXI] [get_bd_intf_pins microblaze_0_axi_periph/M09_AXI]
+##   connect_bd_intf_net -intf_net microblaze_0_debug [get_bd_intf_pins mdm_1/MBDEBUG_0] [get_bd_intf_pins microblaze_0/DEBUG]
+##   connect_bd_intf_net -intf_net microblaze_0_dlmb_1 [get_bd_intf_pins microblaze_0/DLMB] [get_bd_intf_pins microblaze_0_local_memory/DLMB]
+##   connect_bd_intf_net -intf_net microblaze_0_ilmb_1 [get_bd_intf_pins microblaze_0/ILMB] [get_bd_intf_pins microblaze_0_local_memory/ILMB]
+##   connect_bd_intf_net -intf_net microblaze_0_intc_axi [get_bd_intf_pins microblaze_0_axi_intc/s_axi] [get_bd_intf_pins microblaze_0_axi_periph/M00_AXI]
+##   connect_bd_intf_net -intf_net microblaze_0_interrupt [get_bd_intf_pins microblaze_0/INTERRUPT] [get_bd_intf_pins microblaze_0_axi_intc/interrupt]
+## 
+##   # Create port connections
+##   connect_bd_net -net ACK_I_1 [get_bd_ports ACK_I] [get_bd_pins axi_slave_wishbone_classic_master_0/ACK_I]
+##   connect_bd_net -net DAT_I_1 [get_bd_ports DAT_I] [get_bd_pins axi_slave_wishbone_classic_master_0/DAT_I]
+##   connect_bd_net -net Reset_1 [get_bd_ports Reset] [get_bd_pins rst_Clk_100M/ext_reset_in]
+##   connect_bd_net -net axi_hwicap_0_ip2intc_irpt [get_bd_pins axi_hwicap_0/ip2intc_irpt] [get_bd_pins xlconcat_0/In2]
+##   connect_bd_net -net axi_quad_spi_0_io0_o [get_bd_ports MOSI] [get_bd_pins axi_quad_spi_0/io0_o]
+##   connect_bd_net -net axi_quad_spi_0_sck_o [get_bd_ports SCK] [get_bd_pins axi_quad_spi_0/sck_o]
+##   connect_bd_net -net axi_quad_spi_0_ss_o [get_bd_ports SSELb] [get_bd_pins axi_quad_spi_0/ss_o]
+##   connect_bd_net -net axi_slave_wishbone_classic_master_0_ADR_O [get_bd_ports ADR_O] [get_bd_pins axi_slave_wishbone_classic_master_0/ADR_O]
+##   connect_bd_net -net axi_slave_wishbone_classic_master_0_CYC_O [get_bd_ports CYC_O] [get_bd_pins axi_slave_wishbone_classic_master_0/CYC_O]
+##   connect_bd_net -net axi_slave_wishbone_classic_master_0_DAT_O [get_bd_ports DAT_O] [get_bd_pins axi_slave_wishbone_classic_master_0/DAT_O]
+##   connect_bd_net -net axi_slave_wishbone_classic_master_0_RST_O [get_bd_ports RST_O] [get_bd_pins axi_slave_wishbone_classic_master_0/RST_O]
+##   connect_bd_net -net axi_slave_wishbone_classic_master_0_SEL_O [get_bd_ports SEL_O] [get_bd_pins axi_slave_wishbone_classic_master_0/SEL_O]
+##   connect_bd_net -net axi_slave_wishbone_classic_master_0_STB_O [get_bd_ports STB_O] [get_bd_pins axi_slave_wishbone_classic_master_0/STB_O]
+##   connect_bd_net -net axi_slave_wishbone_classic_master_0_WE_O [get_bd_ports WE_O] [get_bd_pins axi_slave_wishbone_classic_master_0/WE_O]
+##   connect_bd_net -net axi_timebase_wdt_0_wdt_reset [get_bd_pins axi_timebase_wdt_0/wdt_reset] [get_bd_pins rst_Clk_100M/aux_reset_in]
+##   connect_bd_net -net axi_timer_0_interrupt [get_bd_pins axi_timer_0/interrupt] [get_bd_pins xlconcat_0/In1]
+##   connect_bd_net -net axi_uartlite_0_interrupt [get_bd_pins axi_uartlite_0/interrupt] [get_bd_pins xlconcat_0/In0]
+##   connect_bd_net -net dcm_locked_1 [get_bd_ports dcm_locked] [get_bd_pins rst_Clk_100M/dcm_locked]
+##   connect_bd_net -net ext_intr_1 [get_bd_ports ext_intr] [get_bd_pins xlconcat_0/In3]
+##   connect_bd_net -net io1_i_0_1 [get_bd_ports MISO] [get_bd_pins axi_quad_spi_0/io1_i]
+##   connect_bd_net -net mdm_1_debug_sys_rst [get_bd_pins mdm_1/Debug_SYS_Rst] [get_bd_pins rst_Clk_100M/mb_debug_sys_rst]
+##   connect_bd_net -net microblaze_0_Clk [get_bd_ports Clk] [get_bd_pins adc_config/s_axi_aclk] [get_bd_pins axi_hwicap_0/icap_clk] [get_bd_pins axi_hwicap_0/s_axi_aclk] [get_bd_pins axi_quad_spi_0/ext_spi_clk] [get_bd_pins axi_quad_spi_0/s_axi_aclk] [get_bd_pins axi_slave_wishbone_classic_master_0/S_AXI_ACLK] [get_bd_pins axi_timebase_wdt_0/s_axi_aclk] [get_bd_pins axi_timer_0/s_axi_aclk] [get_bd_pins axi_uartlite_0/s_axi_aclk] [get_bd_pins drp_config/s_axi_aclk] [get_bd_pins match_pattern_config/s_axi_aclk] [get_bd_pins microblaze_0/Clk] [get_bd_pins microblaze_0_axi_intc/processor_clk] [get_bd_pins microblaze_0_axi_intc/s_axi_aclk] [get_bd_pins microblaze_0_axi_periph/ACLK] [get_bd_pins microblaze_0_axi_periph/M00_ACLK] [get_bd_pins microblaze_0_axi_periph/M01_ACLK] [get_bd_pins microblaze_0_axi_periph/M02_ACLK] [get_bd_pins microblaze_0_axi_periph/M03_ACLK] [get_bd_pins microblaze_0_axi_periph/M04_ACLK] [get_bd_pins microblaze_0_axi_periph/M05_ACLK] [get_bd_pins microblaze_0_axi_periph/M06_ACLK] [get_bd_pins microblaze_0_axi_periph/M07_ACLK] [get_bd_pins microblaze_0_axi_periph/M08_ACLK] [get_bd_pins microblaze_0_axi_periph/M09_ACLK] [get_bd_pins microblaze_0_axi_periph/S00_ACLK] [get_bd_pins microblaze_0_local_memory/LMB_Clk] [get_bd_pins rst_Clk_100M/slowest_sync_clk]
+##   connect_bd_net -net rst_Clk_100M_bus_struct_reset [get_bd_pins microblaze_0_local_memory/LMB_Rst] [get_bd_pins rst_Clk_100M/bus_struct_reset]
+##   connect_bd_net -net rst_Clk_100M_interconnect_aresetn [get_bd_pins microblaze_0_axi_periph/ARESETN] [get_bd_pins rst_Clk_100M/interconnect_aresetn]
+##   connect_bd_net -net rst_Clk_100M_mb_reset [get_bd_pins microblaze_0/Reset] [get_bd_pins microblaze_0_axi_intc/processor_rst] [get_bd_pins rst_Clk_100M/mb_reset]
+##   connect_bd_net -net rst_Clk_100M_peripheral_aresetn [get_bd_pins adc_config/s_axi_aresetn] [get_bd_pins axi_hwicap_0/s_axi_aresetn] [get_bd_pins axi_quad_spi_0/s_axi_aresetn] [get_bd_pins axi_slave_wishbone_classic_master_0/S_AXI_ARESETN] [get_bd_pins axi_timebase_wdt_0/s_axi_aresetn] [get_bd_pins axi_timer_0/s_axi_aresetn] [get_bd_pins axi_uartlite_0/s_axi_aresetn] [get_bd_pins drp_config/s_axi_aresetn] [get_bd_pins match_pattern_config/s_axi_aresetn] [get_bd_pins microblaze_0_axi_intc/s_axi_aresetn] [get_bd_pins microblaze_0_axi_periph/M00_ARESETN] [get_bd_pins microblaze_0_axi_periph/M01_ARESETN] [get_bd_pins microblaze_0_axi_periph/M02_ARESETN] [get_bd_pins microblaze_0_axi_periph/M03_ARESETN] [get_bd_pins microblaze_0_axi_periph/M04_ARESETN] [get_bd_pins microblaze_0_axi_periph/M05_ARESETN] [get_bd_pins microblaze_0_axi_periph/M06_ARESETN] [get_bd_pins microblaze_0_axi_periph/M07_ARESETN] [get_bd_pins microblaze_0_axi_periph/M08_ARESETN] [get_bd_pins microblaze_0_axi_periph/M09_ARESETN] [get_bd_pins microblaze_0_axi_periph/S00_ARESETN] [get_bd_pins rst_Clk_100M/peripheral_aresetn]
+##   connect_bd_net -net xlconcat_0_dout [get_bd_pins microblaze_0_axi_intc/intr] [get_bd_pins xlconcat_0/dout]
+## 
+##   # Create address segments
+##   create_bd_addr_seg -range 0x00010000 -offset 0x44B10000 [get_bd_addr_spaces microblaze_0/Data] [get_bd_addr_segs adc_config/S_AXI/Reg] SEG_axi_gpio_0_Reg
+##   create_bd_addr_seg -range 0x00010000 -offset 0x40200000 [get_bd_addr_spaces microblaze_0/Data] [get_bd_addr_segs axi_hwicap_0/S_AXI_LITE/Reg] SEG_axi_hwicap_0_Reg
+##   create_bd_addr_seg -range 0x00010000 -offset 0x44B00000 [get_bd_addr_spaces microblaze_0/Data] [get_bd_addr_segs axi_quad_spi_0/AXI_LITE/Reg] SEG_axi_quad_spi_0_Reg
+##   create_bd_addr_seg -range 0x00100000 -offset 0x44A00000 [get_bd_addr_spaces microblaze_0/Data] [get_bd_addr_segs axi_slave_wishbone_classic_master_0/S_AXI/reg0] SEG_axi_slave_wishbone_classic_master_0_reg0
+##   create_bd_addr_seg -range 0x00010000 -offset 0x41A00000 [get_bd_addr_spaces microblaze_0/Data] [get_bd_addr_segs axi_timebase_wdt_0/S_AXI/Reg] SEG_axi_timebase_wdt_0_Reg
+##   create_bd_addr_seg -range 0x00010000 -offset 0x41C00000 [get_bd_addr_spaces microblaze_0/Data] [get_bd_addr_segs axi_timer_0/S_AXI/Reg] SEG_axi_timer_0_Reg
+##   create_bd_addr_seg -range 0x00010000 -offset 0x40600000 [get_bd_addr_spaces microblaze_0/Data] [get_bd_addr_segs axi_uartlite_0/S_AXI/Reg] SEG_axi_uartlite_0_Reg
+##   create_bd_addr_seg -range 0x00020000 -offset 0x00000000 [get_bd_addr_spaces microblaze_0/Data] [get_bd_addr_segs microblaze_0_local_memory/dlmb_bram_if_cntlr/SLMB/Mem] SEG_dlmb_bram_if_cntlr_Mem
+##   create_bd_addr_seg -range 0x00010000 -offset 0x44B20000 [get_bd_addr_spaces microblaze_0/Data] [get_bd_addr_segs drp_config/S_AXI/Reg] SEG_drp_config_Reg
+##   create_bd_addr_seg -range 0x00020000 -offset 0x00000000 [get_bd_addr_spaces microblaze_0/Instruction] [get_bd_addr_segs microblaze_0_local_memory/ilmb_bram_if_cntlr/SLMB/Mem] SEG_ilmb_bram_if_cntlr_Mem
+##   create_bd_addr_seg -range 0x00010000 -offset 0x44B30000 [get_bd_addr_spaces microblaze_0/Data] [get_bd_addr_segs match_pattern_config/S_AXI/Reg] SEG_match_pattern_config_Reg
+##   create_bd_addr_seg -range 0x00010000 -offset 0x41200000 [get_bd_addr_spaces microblaze_0/Data] [get_bd_addr_segs microblaze_0_axi_intc/S_AXI/Reg] SEG_microblaze_0_axi_intc_Reg
+## 
+## 
+##   # Restore current instance
+##   current_bd_instance $oldCurInst
+## 
+##   save_bd_design
+## }
+## create_root_design ""
+WARNING: [BD 41-1753] The name 'axi_slave_wishbone_classic_master_0' you have specified is long. The Windows OS has path length limitations. It is recommended you use shorter names(less than 25 characters) to reduce the likelihood of issues when/if running on windows OS.
+WARNING: [BD 41-1306] The connection to interface pin /axi_quad_spi_0/io0_o is being overridden by the user. This pin will not be connected as a part of interface connection SPI_0
+WARNING: [BD 41-1306] The connection to interface pin /axi_quad_spi_0/sck_o is being overridden by the user. This pin will not be connected as a part of interface connection SPI_0
+WARNING: [BD 41-1306] The connection to interface pin /axi_quad_spi_0/ss_o is being overridden by the user. This pin will not be connected as a part of interface connection SPI_0
+WARNING: [BD 41-1306] The connection to interface pin /axi_quad_spi_0/io1_i is being overridden by the user. This pin will not be connected as a part of interface connection SPI_0
+Wrote  : </home/wei/casper/VCU128/adc_snapshot_inside/adc_snapshot_inside/myproj/myproj.srcs/sources_1/bd/cont_microblaze/cont_microblaze.bd> 
+## common::send_msg_id "BD_TCL-1000" "WARNING" "This Tcl script was generated from a block design that has not been validated. It is possible that design <$design_name> may result in errors during validation."
+WARNING: [BD_TCL-1000] This Tcl script was generated from a block design that has not been validated. It is possible that design <cont_microblaze> may result in errors during validation.
+# update_compile_order -fileset sources_1
+# reset_run synth_1
+# launch_runs synth_1 -jobs 4
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'gig_ethernet_pcs_pma_sgmii_lvds'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'gig_ethernet_pcs_pma_sgmii_lvds'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'gbe_cpu_buffer'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'gbe_rx_ctrl_fifo'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'gbe_rx_packet_fifo'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'gbe_ctrl_fifo'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'gbe_tx_packet_fifo'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'gbe_arp_cache'...
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter C_S_AXI_ACLK_FREQ_MHZ(100) on '/microblaze_0_axi_intc' with propagated value(100.0). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter C_PROCESSOR_CLK_FREQ_MHZ(100) on '/microblaze_0_axi_intc' with propagated value(100.0). Command ignored
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+INFO: [xilinx.com:ip:axi_hwicap:3.0-1] /axi_hwicap_0 
+                    ##########################################################################################
+                    Clocks connected to AXI HWICAP are same. Configuring AXI HWICAP in SYNC mode ..........
+                    ##########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /axi_quad_spi_0 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /axi_quad_spi_0 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /axi_slave_wishbone_classic_master_0/S_AXI(1) and /microblaze_0_axi_periph/m03_couplers/auto_pc/M_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /axi_slave_wishbone_classic_master_0/S_AXI(1) and /microblaze_0_axi_periph/m03_couplers/auto_pc/M_AXI(0)
+WARNING: [BD 41-237] Bus Interface property WUSER_WIDTH does not match between /axi_slave_wishbone_classic_master_0/S_AXI(1) and /microblaze_0_axi_periph/m03_couplers/auto_pc/M_AXI(0)
+WARNING: [BD 41-237] Bus Interface property RUSER_WIDTH does not match between /axi_slave_wishbone_classic_master_0/S_AXI(1) and /microblaze_0_axi_periph/m03_couplers/auto_pc/M_AXI(0)
+WARNING: [BD 41-237] Bus Interface property BUSER_WIDTH does not match between /axi_slave_wishbone_classic_master_0/S_AXI(1) and /microblaze_0_axi_periph/m03_couplers/auto_pc/M_AXI(0)
+WARNING: [BD 41-927] Following properties on pin /axi_slave_wishbone_classic_master_0/S_AXI_ACLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=cont_microblaze_Clk 
+Wrote  : </home/wei/casper/VCU128/adc_snapshot_inside/adc_snapshot_inside/myproj/myproj.srcs/sources_1/bd/cont_microblaze/cont_microblaze.bd> 
+VHDL Output written to : /home/wei/casper/VCU128/adc_snapshot_inside/adc_snapshot_inside/myproj/myproj.srcs/sources_1/bd/cont_microblaze/synth/cont_microblaze.vhd
+VHDL Output written to : /home/wei/casper/VCU128/adc_snapshot_inside/adc_snapshot_inside/myproj/myproj.srcs/sources_1/bd/cont_microblaze/sim/cont_microblaze.vhd
+VHDL Output written to : /home/wei/casper/VCU128/adc_snapshot_inside/adc_snapshot_inside/myproj/myproj.srcs/sources_1/bd/cont_microblaze/hdl/cont_microblaze_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block adc_config .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_hwicap_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_quad_spi_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_slave_wishbone_classic_master_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/wei/casper/VCU128/adc_snapshot_inside/adc_snapshot_inside/myproj/myproj.srcs/sources_1/bd/cont_microblaze/ip/cont_microblaze_axi_timebase_wdt_0_0/cont_microblaze_axi_timebase_wdt_0_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_timebase_wdt_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_timer_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uartlite_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block drp_config .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block match_pattern_config .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mdm_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_intc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/lmb_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_Clk_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconcat_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/wei/casper/VCU128/adc_snapshot_inside/adc_snapshot_inside/myproj/myproj.srcs/sources_1/bd/cont_microblaze/ip/cont_microblaze_auto_pc_0/cont_microblaze_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m03_couplers/auto_pc .
+Exporting to file /home/wei/casper/VCU128/adc_snapshot_inside/adc_snapshot_inside/myproj/myproj.srcs/sources_1/bd/cont_microblaze/hw_handoff/cont_microblaze.hwh
+Generated Block Design Tcl file /home/wei/casper/VCU128/adc_snapshot_inside/adc_snapshot_inside/myproj/myproj.srcs/sources_1/bd/cont_microblaze/hw_handoff/cont_microblaze_bd.tcl
+Generated Hardware Definition File /home/wei/casper/VCU128/adc_snapshot_inside/adc_snapshot_inside/myproj/myproj.srcs/sources_1/bd/cont_microblaze/synth/cont_microblaze.hwdef
+WARNING: [BD 41-927] Following properties on pin /adc4x16g_core_0/adc_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=adc4x16g_core_adc4x16g_core_0_0_adc_clk 
+Wrote  : </home/wei/casper/VCU128/adc_snapshot_inside/adc_snapshot_inside/myproj/myproj.srcs/sources_1/bd/adc4x16g_core/adc4x16g_core.bd> 
+VHDL Output written to : /home/wei/casper/VCU128/adc_snapshot_inside/adc_snapshot_inside/myproj/myproj.srcs/sources_1/bd/adc4x16g_core/synth/adc4x16g_core.vhd
+VHDL Output written to : /home/wei/casper/VCU128/adc_snapshot_inside/adc_snapshot_inside/myproj/myproj.srcs/sources_1/bd/adc4x16g_core/sim/adc4x16g_core.vhd
+VHDL Output written to : /home/wei/casper/VCU128/adc_snapshot_inside/adc_snapshot_inside/myproj/myproj.srcs/sources_1/bd/adc4x16g_core/hdl/adc4x16g_core_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block adc4x16g_core_0 .
+Exporting to file /home/wei/casper/VCU128/adc_snapshot_inside/adc_snapshot_inside/myproj/myproj.srcs/sources_1/bd/adc4x16g_core/hw_handoff/adc4x16g_core.hwh
+Generated Block Design Tcl file /home/wei/casper/VCU128/adc_snapshot_inside/adc_snapshot_inside/myproj/myproj.srcs/sources_1/bd/adc4x16g_core/hw_handoff/adc4x16g_core_bd.tcl
+Generated Hardware Definition File /home/wei/casper/VCU128/adc_snapshot_inside/adc_snapshot_inside/myproj/myproj.srcs/sources_1/bd/adc4x16g_core/synth/adc4x16g_core.hwdef
+[Sat Jan  9 04:35:35 2021] Launched gbe_arp_cache_synth_1, cont_microblaze_mdm_1_0_synth_1, cont_microblaze_axi_hwicap_0_0_synth_1, gbe_ctrl_fifo_synth_1, gbe_cpu_buffer_synth_1, gbe_rx_packet_fifo_synth_1, gig_ethernet_pcs_pma_sgmii_lvds_synth_1, gbe_tx_packet_fifo_synth_1, gbe_rx_ctrl_fifo_synth_1, adc4x16g_core_adc4x16g_core_0_0_synth_1, cont_microblaze_microblaze_0_0_synth_1, cont_microblaze_microblaze_0_axi_intc_0_synth_1, cont_microblaze_xbar_0_synth_1, cont_microblaze_dlmb_bram_if_cntlr_0_synth_1, cont_microblaze_dlmb_v10_0_synth_1, cont_microblaze_ilmb_bram_if_cntlr_0_synth_1, cont_microblaze_ilmb_v10_0_synth_1, cont_microblaze_lmb_bram_0_synth_1, cont_microblaze_rst_Clk_100M_0_synth_1, cont_microblaze_match_pattern_config_0_synth_1, cont_microblaze_drp_config_0_synth_1, cont_microblaze_axi_uartlite_0_0_synth_1, cont_microblaze_axi_quad_spi_0_0_synth_1, cont_microblaze_axi_slave_wishbone_classic_master_0_0_synth_1, cont_microblaze_axi_timebase_wdt_0_0_synth_1, cont_microblaze_axi_timer_0_0_synth_1, cont_microblaze_adc_config_0_synth_1, cont_microblaze_auto_pc_0_synth_1...
+Run output will be captured here:
+gbe_arp_cache_synth_1: /home/wei/casper/VCU128/adc_snapshot_inside/adc_snapshot_inside/myproj/myproj.runs/gbe_arp_cache_synth_1/runme.log
+cont_microblaze_mdm_1_0_synth_1: /home/wei/casper/VCU128/adc_snapshot_inside/adc_snapshot_inside/myproj/myproj.runs/cont_microblaze_mdm_1_0_synth_1/runme.log
+cont_microblaze_axi_hwicap_0_0_synth_1: /home/wei/casper/VCU128/adc_snapshot_inside/adc_snapshot_inside/myproj/myproj.runs/cont_microblaze_axi_hwicap_0_0_synth_1/runme.log
+gbe_ctrl_fifo_synth_1: /home/wei/casper/VCU128/adc_snapshot_inside/adc_snapshot_inside/myproj/myproj.runs/gbe_ctrl_fifo_synth_1/runme.log
+gbe_cpu_buffer_synth_1: /home/wei/casper/VCU128/adc_snapshot_inside/adc_snapshot_inside/myproj/myproj.runs/gbe_cpu_buffer_synth_1/runme.log
+gbe_rx_packet_fifo_synth_1: /home/wei/casper/VCU128/adc_snapshot_inside/adc_snapshot_inside/myproj/myproj.runs/gbe_rx_packet_fifo_synth_1/runme.log
+gig_ethernet_pcs_pma_sgmii_lvds_synth_1: /home/wei/casper/VCU128/adc_snapshot_inside/adc_snapshot_inside/myproj/myproj.runs/gig_ethernet_pcs_pma_sgmii_lvds_synth_1/runme.log
+gbe_tx_packet_fifo_synth_1: /home/wei/casper/VCU128/adc_snapshot_inside/adc_snapshot_inside/myproj/myproj.runs/gbe_tx_packet_fifo_synth_1/runme.log
+gbe_rx_ctrl_fifo_synth_1: /home/wei/casper/VCU128/adc_snapshot_inside/adc_snapshot_inside/myproj/myproj.runs/gbe_rx_ctrl_fifo_synth_1/runme.log
+adc4x16g_core_adc4x16g_core_0_0_synth_1: /home/wei/casper/VCU128/adc_snapshot_inside/adc_snapshot_inside/myproj/myproj.runs/adc4x16g_core_adc4x16g_core_0_0_synth_1/runme.log
+cont_microblaze_microblaze_0_0_synth_1: /home/wei/casper/VCU128/adc_snapshot_inside/adc_snapshot_inside/myproj/myproj.runs/cont_microblaze_microblaze_0_0_synth_1/runme.log
+cont_microblaze_microblaze_0_axi_intc_0_synth_1: /home/wei/casper/VCU128/adc_snapshot_inside/adc_snapshot_inside/myproj/myproj.runs/cont_microblaze_microblaze_0_axi_intc_0_synth_1/runme.log
+cont_microblaze_xbar_0_synth_1: /home/wei/casper/VCU128/adc_snapshot_inside/adc_snapshot_inside/myproj/myproj.runs/cont_microblaze_xbar_0_synth_1/runme.log
+cont_microblaze_dlmb_bram_if_cntlr_0_synth_1: /home/wei/casper/VCU128/adc_snapshot_inside/adc_snapshot_inside/myproj/myproj.runs/cont_microblaze_dlmb_bram_if_cntlr_0_synth_1/runme.log
+cont_microblaze_dlmb_v10_0_synth_1: /home/wei/casper/VCU128/adc_snapshot_inside/adc_snapshot_inside/myproj/myproj.runs/cont_microblaze_dlmb_v10_0_synth_1/runme.log
+cont_microblaze_ilmb_bram_if_cntlr_0_synth_1: /home/wei/casper/VCU128/adc_snapshot_inside/adc_snapshot_inside/myproj/myproj.runs/cont_microblaze_ilmb_bram_if_cntlr_0_synth_1/runme.log
+cont_microblaze_ilmb_v10_0_synth_1: /home/wei/casper/VCU128/adc_snapshot_inside/adc_snapshot_inside/myproj/myproj.runs/cont_microblaze_ilmb_v10_0_synth_1/runme.log
+cont_microblaze_lmb_bram_0_synth_1: /home/wei/casper/VCU128/adc_snapshot_inside/adc_snapshot_inside/myproj/myproj.runs/cont_microblaze_lmb_bram_0_synth_1/runme.log
+cont_microblaze_rst_Clk_100M_0_synth_1: /home/wei/casper/VCU128/adc_snapshot_inside/adc_snapshot_inside/myproj/myproj.runs/cont_microblaze_rst_Clk_100M_0_synth_1/runme.log
+cont_microblaze_match_pattern_config_0_synth_1: /home/wei/casper/VCU128/adc_snapshot_inside/adc_snapshot_inside/myproj/myproj.runs/cont_microblaze_match_pattern_config_0_synth_1/runme.log
+cont_microblaze_drp_config_0_synth_1: /home/wei/casper/VCU128/adc_snapshot_inside/adc_snapshot_inside/myproj/myproj.runs/cont_microblaze_drp_config_0_synth_1/runme.log
+cont_microblaze_axi_uartlite_0_0_synth_1: /home/wei/casper/VCU128/adc_snapshot_inside/adc_snapshot_inside/myproj/myproj.runs/cont_microblaze_axi_uartlite_0_0_synth_1/runme.log
+cont_microblaze_axi_quad_spi_0_0_synth_1: /home/wei/casper/VCU128/adc_snapshot_inside/adc_snapshot_inside/myproj/myproj.runs/cont_microblaze_axi_quad_spi_0_0_synth_1/runme.log
+cont_microblaze_axi_slave_wishbone_classic_master_0_0_synth_1: /home/wei/casper/VCU128/adc_snapshot_inside/adc_snapshot_inside/myproj/myproj.runs/cont_microblaze_axi_slave_wishbone_classic_master_0_0_synth_1/runme.log
+cont_microblaze_axi_timebase_wdt_0_0_synth_1: /home/wei/casper/VCU128/adc_snapshot_inside/adc_snapshot_inside/myproj/myproj.runs/cont_microblaze_axi_timebase_wdt_0_0_synth_1/runme.log
+cont_microblaze_axi_timer_0_0_synth_1: /home/wei/casper/VCU128/adc_snapshot_inside/adc_snapshot_inside/myproj/myproj.runs/cont_microblaze_axi_timer_0_0_synth_1/runme.log
+cont_microblaze_adc_config_0_synth_1: /home/wei/casper/VCU128/adc_snapshot_inside/adc_snapshot_inside/myproj/myproj.runs/cont_microblaze_adc_config_0_synth_1/runme.log
+cont_microblaze_auto_pc_0_synth_1: /home/wei/casper/VCU128/adc_snapshot_inside/adc_snapshot_inside/myproj/myproj.runs/cont_microblaze_auto_pc_0_synth_1/runme.log
+[Sat Jan  9 04:35:35 2021] Launched synth_1...
+Run output will be captured here: /home/wei/casper/VCU128/adc_snapshot_inside/adc_snapshot_inside/myproj/myproj.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:01:36 ; elapsed = 00:01:41 . Memory (MB): peak = 3375.977 ; gain = 345.406 ; free physical = 8786 ; free virtual = 31021
+# wait_on_run synth_1
+[Sat Jan  9 04:35:35 2021] Waiting for synth_1 to finish...
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+****** Vivado v2019.1.3 (64-bit)
+  **** SW Build 2644227 on Wed Sep  4 09:44:18 MDT 2019
+  **** IP Build 2633630 on Wed Sep  4 12:30:14 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+WARNING: [Runs 36-547] Tool Strategy 'Vivado Implementation Defaults' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_Explore' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_ExplorePostRoutePhysOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_ExploreWithRemap' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_WLBlockPlacement' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_WLBlockPlacementFanoutOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_EarlyBlockPlacement' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_NetDelay_high' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_NetDelay_low' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_Retiming' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_ExtraTimingOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_RefinePlacement' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_SpreadSLLs' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_BalanceSLLs' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_BalanceSLRs' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_HighUtilSLRs' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_SpreadLogic_high' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_SpreadLogic_medium' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_SpreadLogic_low' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_SSI_SpreadLogic_high' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_SSI_SpreadLogic_low' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Area_Explore' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Area_ExploreSequential' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Area_ExploreWithRemap' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Power_DefaultOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Power_ExploreArea' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_RunPhysOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_RunPostRoutePhysOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_RuntimeOptimized' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_Quick' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Vivado Synthesis Defaults' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2016.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2016.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_AreaOptimized_high' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2016.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2016.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_AreaOptimized_medium' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2016.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2016.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_AreaMultThresholdDSP' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2016.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2016.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_AlternateRoutability' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2016.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2016.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_PerfOptimized_high' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2016.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2016.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_PerfThresholdCarry' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2016.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2016.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_RuntimeOptimized' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2016.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2016.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Vivado Implementation Defaults' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_Explore' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_ExplorePostRoutePhysOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_ExploreWithRemap' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_WLBlockPlacement' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_WLBlockPlacementFanoutOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_EarlyBlockPlacement' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_NetDelay_high' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_NetDelay_low' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_Retiming' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_ExtraTimingOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_RefinePlacement' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_SpreadSLLs' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_BalanceSLLs' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_BalanceSLRs' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_HighUtilSLRs' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_SpreadLogic_high' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_SpreadLogic_medium' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_SpreadLogic_low' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_SSI_SpreadLogic_high' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_SSI_SpreadLogic_low' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Area_Explore' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Area_ExploreSequential' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Area_ExploreWithRemap' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Power_DefaultOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Power_ExploreArea' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_RunPhysOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_RunPostRoutePhysOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_RuntimeOptimized' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_Quick' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2019.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Vivado Implementation Defaults' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_Explore' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_ExplorePostRoutePhysOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_RefinePlacement' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_WLBlockPlacement' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_WLBlockPlacementFanoutOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_LateBlockPlacement' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_NetDelay_high' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_NetDelay_medium' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_NetDelay_low' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_ExploreSLLs' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Performance_Retiming' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Area_Explore' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Power_DefaultOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_RunPhysOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_RunPostRoutePhysOpt' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_RuntimeOptimized' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_Quick' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_SpreadLogic_high' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_SpreadLogic_medium' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_SpreadLogic_low' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_SpreadLogicSLLs' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_BalanceSLLs' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_BalanceSLRs' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Congestion_CompressSLRs' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDI2014.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Vivado Synthesis Defaults' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2012.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2012.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Vivado Synthesis Defaults' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2013.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2013.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_RuntimeOptimized' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2013.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2013.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Vivado Synthesis Defaults' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_AreaOptimized_high' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_AreaOptimized_medium' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2018.psg'
+WARNING: [Runs 36-547] Tool Strategy 'Flow_AreaMultThresholdDSP' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/strategies/VDS2018.psg'
+INFO: [Common 17-14] Message 'Runs 36-547' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Runs 36-546] Tool Report Strategy 'Vivado Synthesis Default Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRS2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRS2019.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'No Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRS2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRS2019.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'Vivado Synthesis Default Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRS2017.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRS2017.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'No Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRS2017.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRS2017.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'Vivado Implementation Default Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2019.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'UltraFast Design Methodology Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2019.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'Performance Explore Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2019.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'Timing Closure Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2019.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'No Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2019.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2019.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'Vivado Synthesis Default Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRS2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRS2018.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'No Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRS2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRS2018.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'Vivado Implementation Default Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2018.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'UltraFast Design Methodology Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2018.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'Performance Explore Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2018.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'Timing Closure Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2018.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'No Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2018.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2018.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'Vivado Implementation Default Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2017.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2017.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'UltraFast Design Methodology Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2017.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2017.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'Performance Explore Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2017.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2017.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'Timing Closure Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2017.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2017.psg'
+WARNING: [Runs 36-546] Tool Report Strategy 'No Reports' from file '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2017.psg' discarded because strategy with same name already parsed from '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/reportstrategies/VRI2017.psg'
+source top.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/adc4x16g/ip_repo_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/axi_wb_bridge/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/wei/Software/Vivado_2019_1/install/Vivado/2019.1/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:gty_wrapper_0:2.0'. The one found in IP location '/home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/adc4x16g/ip_repo_0/adc16G4X_datarx' will take precedence over the same IP in location /home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/adc4x16g/ip_repo_0/adc4x16g_core/adc4x16g_core.srcs/sources_1/imports/adc16G4X_datarx
+Command: synth_design -top top -part xcvu37p-fsvh2892-2L-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcvu37p'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcvu37p'
+INFO: [Common 17-86] Your Synthesis license expires in 14 day(s)
+INFO: [Common 17-1540] The version limit for your license is '2020.03' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: [Device 21-403] Loading part xcvu37p-fsvh2892-2L-e
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 24222 
+WARNING: [Synth 8-6901] identifier 'cpu_tx_ready_retimed' is used before its declaration [/home/wei/casper/VCU128/adc_snapshot_inside/adc_snapshot_inside/myproj/myproj.srcs/sources_1/imports/onegbe/gbe_tx.v:224]
+ERROR: [Synth 8-2154] illegal net data type [/home/wei/casper/VCU128/adc_snapshot_inside/adc_snapshot_inside/myproj/myproj.srcs/sources_1/imports/adc4x16g/wb_adc4x16g_controller.v:47]
+ERROR: [Synth 8-2576] procedural assignment to a non-register wb_data_out_reg is not permitted [/home/wei/casper/VCU128/adc_snapshot_inside/adc_snapshot_inside/myproj/myproj.srcs/sources_1/imports/adc4x16g/wb_adc4x16g_controller.v:82]
+INFO: [Synth 8-2350] module wb_adc4x16g_controller ignored due to previous errors [/home/wei/casper/VCU128/adc_snapshot_inside/adc_snapshot_inside/myproj/myproj.srcs/sources_1/imports/adc4x16g/wb_adc4x16g_controller.v:12]
+Failed to read verilog '/home/wei/casper/VCU128/adc_snapshot_inside/adc_snapshot_inside/myproj/myproj.srcs/sources_1/imports/adc4x16g/wb_adc4x16g_controller.v'
+INFO: [Common 17-83] Releasing license: Synthesis
+10 Infos, 2 Warnings, 0 Critical Warnings and 3 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Sat Jan  9 04:49:47 2021...
+[Sat Jan  9 04:49:47 2021] synth_1 finished
+wait_on_run: Time (s): cpu = 00:35:30 ; elapsed = 00:14:12 . Memory (MB): peak = 3375.977 ; gain = 0.000 ; free physical = 8552 ; free virtual = 30930
+# open_run synth_1
+ERROR: [Common 17-69] Command failed: Run 'synth_1' failed. Unable to open
+INFO: [Common 17-206] Exiting Vivado at Sat Jan  9 04:49:47 2021...

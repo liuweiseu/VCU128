@@ -1,0 +1,127 @@
+{
+  'Line_105' => {
+    'CodeInstance' => 'adc_snapshot_inside_struct/one_gbe/convert_rx_ack',
+    'Instance' => 'convert_rx_ack',
+    'SimulinkInstance' => 'adc_snapshot_inside/one_gbe/convert_rx_ack'
+  },
+  'Line_126' => {
+    'CodeInstance' => 'adc_snapshot_inside_struct/one_gbe/convert_rx_rst',
+    'Instance' => 'convert_rx_rst',
+    'SimulinkInstance' => 'adc_snapshot_inside/one_gbe/convert_rx_rst'
+  },
+  'Line_147' => {
+    'CodeInstance' => 'adc_snapshot_inside_struct/one_gbe/convert_tx_data',
+    'Instance' => 'convert_tx_data',
+    'SimulinkInstance' => 'adc_snapshot_inside/one_gbe/convert_tx_data'
+  },
+  'Line_168' => {
+    'CodeInstance' => 'adc_snapshot_inside_struct/one_gbe/convert_tx_dest_ip',
+    'Instance' => 'convert_tx_dest_ip',
+    'SimulinkInstance' => 'adc_snapshot_inside/one_gbe/convert_tx_dest_ip'
+  },
+  'Line_189' => {
+    'CodeInstance' => 'adc_snapshot_inside_struct/one_gbe/convert_tx_end_of_frame',
+    'Instance' => 'convert_tx_end_of_frame',
+    'SimulinkInstance' => 'adc_snapshot_inside/one_gbe/convert_tx_end_of_frame'
+  },
+  'Line_210' => {
+    'CodeInstance' => 'adc_snapshot_inside_struct/one_gbe/convert_tx_port',
+    'Instance' => 'convert_tx_port',
+    'SimulinkInstance' => 'adc_snapshot_inside/one_gbe/convert_tx_port'
+  },
+  'Line_231' => {
+    'CodeInstance' => 'adc_snapshot_inside_struct/one_gbe/convert_tx_rst',
+    'Instance' => 'convert_tx_rst',
+    'SimulinkInstance' => 'adc_snapshot_inside/one_gbe/convert_tx_rst'
+  },
+  'Line_24' => {
+    'CodeInstance' => 'adc_snapshot_inside_struct/gpio/convert',
+    'Instance' => 'convert',
+    'SimulinkInstance' => 'adc_snapshot_inside/gpio/convert'
+  },
+  'Line_252' => {
+    'CodeInstance' => 'adc_snapshot_inside_struct/one_gbe/convert_tx_valid',
+    'Instance' => 'convert_tx_valid',
+    'SimulinkInstance' => 'adc_snapshot_inside/one_gbe/convert_tx_valid'
+  },
+  'Line_292' => {
+    'CodeInstance' => 'adc_snapshot_inside_struct/reg_cntrl/io_delay',
+    'Instance' => 'io_delay',
+    'SimulinkInstance' => 'adc_snapshot_inside/reg_cntrl/io_delay'
+  },
+  'Line_300' => {
+    'CodeInstance' => 'adc_snapshot_inside_struct/reg_cntrl/slice_rst_cntrl',
+    'Instance' => 'slice_rst_cntrl',
+    'SimulinkInstance' => 'adc_snapshot_inside/reg_cntrl/slice_rst_cntrl'
+  },
+  'Line_596' => {
+    'CodeInstance' => 'adc_snapshot_inside_struct/gpio',
+    'Instance' => 'gpio',
+    'SimulinkInstance' => 'adc_snapshot_inside/gpio'
+  },
+  'Line_603' => {
+    'CodeInstance' => 'adc_snapshot_inside_struct/one_gbe',
+    'Instance' => 'one_gbe',
+    'SimulinkInstance' => 'adc_snapshot_inside/one_gbe'
+  },
+  'Line_622' => {
+    'CodeInstance' => 'adc_snapshot_inside_struct/reg_cntrl',
+    'Instance' => 'reg_cntrl',
+    'SimulinkInstance' => 'adc_snapshot_inside/reg_cntrl'
+  },
+  'Line_627' => {
+    'CodeInstance' => 'adc_snapshot_inside_struct/constant1',
+    'Instance' => 'constant1',
+    'SimulinkInstance' => 'adc_snapshot_inside/Constant1'
+  },
+  'Line_634' => {
+    'CodeInstance' => 'adc_snapshot_inside_struct/constant2',
+    'Instance' => 'constant2',
+    'SimulinkInstance' => 'adc_snapshot_inside/Constant2'
+  },
+  'Line_641' => {
+    'CodeInstance' => 'adc_snapshot_inside_struct/constant3',
+    'Instance' => 'constant3',
+    'SimulinkInstance' => 'adc_snapshot_inside/Constant3'
+  },
+  'Line_648' => {
+    'CodeInstance' => 'adc_snapshot_inside_struct/constant4',
+    'Instance' => 'constant4',
+    'SimulinkInstance' => 'adc_snapshot_inside/Constant4'
+  },
+  'Line_655' => {
+    'CodeInstance' => 'adc_snapshot_inside_struct/constant5',
+    'Instance' => 'constant5',
+    'SimulinkInstance' => 'adc_snapshot_inside/Constant5'
+  },
+  'Line_662' => {
+    'CodeInstance' => 'adc_snapshot_inside_struct/constant6',
+    'Instance' => 'constant6',
+    'SimulinkInstance' => 'adc_snapshot_inside/Constant6'
+  },
+  'Line_669' => {
+    'CodeInstance' => 'adc_snapshot_inside_struct/constant7',
+    'Instance' => 'constant7',
+    'SimulinkInstance' => 'adc_snapshot_inside/Constant7'
+  },
+  'Line_676' => {
+    'CodeInstance' => 'adc_snapshot_inside_struct/constant8',
+    'Instance' => 'constant8',
+    'SimulinkInstance' => 'adc_snapshot_inside/Constant8'
+  },
+  'Line_700' => {
+    'CodeInstance' => 'adc_snapshot_inside_default_clock_driver/clockdriver',
+    'Instance' => 'clockdriver',
+    'SimulinkInstance' => ''
+  },
+  'Line_815' => {
+    'CodeInstance' => 'adc_snapshot_inside_default_clock_driver',
+    'Instance' => 'adc_snapshot_inside_default_clock_driver',
+    'SimulinkInstance' => ''
+  },
+  'Line_823' => {
+    'CodeInstance' => 'adc_snapshot_inside_struct',
+    'Instance' => 'adc_snapshot_inside_struct',
+    'SimulinkInstance' => 'adc_snapshot_inside'
+  }
+}

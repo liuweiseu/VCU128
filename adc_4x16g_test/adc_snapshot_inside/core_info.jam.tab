@@ -1,0 +1,14 @@
+adc4x16g_controller0        3 10000            100              0 
+adc4x16g_wb_ram0            3 10100            1000             0 
+one_gbe                     3 11100            10000            1 
+reg_cntrl                   3 21100            4                0 
+sys_block                   1 21104            20               3 
+sys_board_id                1 21104            4                3 
+sys_rev                     1 21108            4                3 
+sys_rev_rcs                 1 21110            4                3 
+sys_scratchpad              3 21114            4                3 
+sys_clkcounter              1 21118            4                3 
+VCU128_adc_config           3 110000           10000            4 
+VCU128_axi_quad_spi         3 100000           10000            4 
+VCU128_drp_config           3 120000           10000            4 
+VCU128_match_pattern_config 3 130000           10000            4 

@@ -1,0 +1,567 @@
+!!python/object:castro.Castro
+design_name: top
+ips:
+- {library: user, name: adc4x16g_core, path: /home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/adc4x16g/ip_repo_0,
+  vendor: xilinx.com, version: '1.3'}
+- {library: user, name: axi_slave_wishbone_classic_master, path: /home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/axi_wb_bridge/ip_repo,
+  vendor: peralex.com, version: '1.0'}
+mm_slaves:
+- !!python/object:castro.mm_slave {base_address: 65536, high_address: 65792, mode: 3,
+  name: adc4x16g_controller0, span: 256}
+- !!python/object:castro.mm_slave {base_address: 65792, high_address: 69888, mode: 3,
+  name: adc4x16g_wb_ram0, span: 4096}
+- !!python/object:castro.mm_slave {base_address: 69888, high_address: 135424, mode: 3,
+  name: one_gbe, span: 65536}
+- !!python/object:castro.mm_slave {base_address: 135424, high_address: 135428, mode: 3,
+  name: reg_cntrl, span: 4}
+- !!python/object:castro.mm_slave {base_address: 135428, high_address: 135460, mode: 1,
+  name: sys_block, span: 32}
+- !!python/object:castro.mm_slave {base_address: 1114112, high_address: 1179648, mode: 3,
+  name: VCU128_adc_config, span: 65536}
+- !!python/object:castro.mm_slave {base_address: 1048576, high_address: 1114112, mode: 3,
+  name: VCU128_axi_quad_spi, span: 65536}
+- !!python/object:castro.mm_slave {base_address: 1179648, high_address: 1245184, mode: 3,
+  name: VCU128_drp_config, span: 65536}
+- !!python/object:castro.mm_slave {base_address: 1245184, high_address: 1310720, mode: 3,
+  name: VCU128_match_pattern_config, span: 65536}
+src_files: [/home/wei/casper/VCU128/adc_snapshot_inside/adc_snapshot_inside/top.v,
+  /home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/adc4x16g/ADC4X16G_Channel_Sel.v,
+  /home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/adc4x16g/data_splitter.v,
+  /home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/adc4x16g/wb_adc4x16g_controller.v,
+  /home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/wb_bram, /home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/gpio_simulink2ext,
+  /home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/onegbe/CRC_gen.v,
+  /home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/onegbe/gig_eth_mac_rx.v,
+  /home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/onegbe/CRC_chk.v,
+  /home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/onegbe/gbe_udp.v,
+  /home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/onegbe/gbe_cpu_attach_wb.v,
+  /home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/onegbe/gig_eth_mac_tx.v,
+  /home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/onegbe/gig_eth_mac.v,
+  /home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/onegbe/mdio_master.v,
+  /home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/onegbe/gbe_rx.v, /home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/onegbe/gbe_tx.v,
+  /home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/onegbe/mdio_config.v,
+  /home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/onegbe/virtexuplushbm/gbe_cpu_buffer.xci,
+  /home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/onegbe/virtexuplushbm/gbe_arp_cache.xci,
+  /home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/onegbe/virtexuplushbm/gbe_ctrl_fifo.xci,
+  /home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/onegbe/virtexuplushbm/gbe_rx_packet_fifo.xci,
+  /home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/onegbe/virtexuplushbm/gig_ethernet_pcs_pma_sgmii_lvds.xci,
+  /home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/onegbe/virtexuplushbm/gbe_tx_packet_fifo.xci,
+  /home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/onegbe/virtexuplushbm/gbe_rx_ctrl_fifo.xci,
+  /home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/wb_register_ppc2simulink,
+  /home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/infrastructure/vcu128_infrastructure.v,
+  /home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/wbs_arbiter, /home/wei/casper/VCU128/mlib_devel/jasper_library/hdl_sources/sys_block,
+  /home/wei/casper/VCU128/adc_snapshot_inside/adc_snapshot_inside/sysgen/hdl_netlist/adc_snapshot_inside.srcs/sources_1/imports/sysgen]
+synthesis: !!python/object:castro.Synthesis
+  clk_constraints:
+  - !!python/object:castro.ClkConstraint {clkname: adcclk0, freq_mhz: 500.0, period_ns: 2.0,
+    port_en: true, portname: refclk0_p, virtual_en: false, waveform_max_ns: 1.0, waveform_min_ns: 0.0}
+  - !!python/object:castro.ClkConstraint {clkname: sys_clk_p_CLK, freq_mhz: 100.0,
+    period_ns: 10.0, port_en: true, portname: sys_clk_p, virtual_en: false, waveform_max_ns: 5.0,
+    waveform_min_ns: 0.0}
+  clk_grp_constraints: []
+  false_path_constraints:
+  - !!python/object:castro.FalsePthConstraint {destpath: '[get_ports {adc_snapshot_inside_gpio_ext[*]}]',
+    sourcepath: null}
+  - !!python/object:castro.FalsePthConstraint {destpath: '[get_clocks -of_objects
+      [get_pins adc_snapshot_inside_one_gbe_pcs_pma/inst/clock_reset_i/Clk_Rst_I_Plle3_Tx/CLKOUT1]]',
+    sourcepath: '[get_clocks -of_objects [get_pins vcu128_infrastructure_inst/MMCM_BASE_inst/CLKOUT1]]'}
+  - !!python/object:castro.FalsePthConstraint {destpath: '[get_clocks -of_objects
+      [get_pins vcu128_infrastructure_inst/MMCM_BASE_inst/CLKOUT1]]', sourcepath: '[get_clocks
+      -of_objects [get_pins adc_snapshot_inside_one_gbe_pcs_pma/inst/clock_reset_i/Clk_Rst_I_Plle3_Tx/CLKOUT1]]'}
+  - !!python/object:castro.FalsePthConstraint {destpath: '[get_clocks -of_objects
+      [get_pins adc_snapshot_inside_one_gbe_pcs_pma/inst/clock_reset_i/Clk_Rst_I_Plle3_Tx/CLKOUT1]]',
+    sourcepath: '[get_clocks -of_objects [get_pins vcu128_infrastructure_inst/MMCM_BASE_inst/CLKOUT4]]'}
+  - !!python/object:castro.FalsePthConstraint {destpath: '[get_clocks -of_objects
+      [get_pins vcu128_infrastructure_inst/MMCM_BASE_inst/CLKOUT4]]', sourcepath: '[get_clocks
+      -of_objects [get_pins adc_snapshot_inside_one_gbe_pcs_pma/inst/clock_reset_i/Clk_Rst_I_Plle3_Tx/CLKOUT1]]'}
+  - !!python/object:castro.FalsePthConstraint {destpath: '[get_clocks -of_objects
+      [get_pins vcu128_infrastructure_inst/MMCM_BASE_inst/CLKOUT4]]', sourcepath: '[get_clocks
+      -of_objects [get_pins vcu128_infrastructure_inst/MMCM_BASE_inst/CLKOUT1]]'}
+  - !!python/object:castro.FalsePthConstraint {destpath: '[get_clocks -of_objects
+      [get_pins vcu128_infrastructure_inst/MMCM_BASE_inst/CLKOUT1]]', sourcepath: '[get_clocks
+      -of_objects [get_pins vcu128_infrastructure_inst/MMCM_BASE_inst/CLKOUT4]]'}
+  fpga_manufacturer: Xilinx
+  fpga_model: xcvu37p-fsvh2892-2L-e
+  gen_clk_constraints: []
+  input_delay_constraints: []
+  max_delay_constraints:
+  - !!python/object:castro.MaxDelayConstraint {constdelay_ns: 1.0, destpath: '[get_ports
+      {adc_snapshot_inside_gpio_ext[*]}]', sourcepath: null}
+  min_delay_constraints:
+  - !!python/object:castro.MinDelayConstraint {constdelay_ns: 1.0, destpath: '[get_ports
+      {adc_snapshot_inside_gpio_ext[*]}]', sourcepath: null}
+  multi_cycle_constraints: []
+  output_delay_constraints: []
+  pin_constraints:
+  - !!python/object:castro.PinConstraint
+    drive_strength: 0
+    io_standard: [null]
+    location: [AN40]
+    portname: refclk0_p
+    portname_indices: &id001 []
+    slew_rate: 0
+    symbolic_indices: [2]
+    symbolic_name: fmcp_gty_clk_p
+    termination: ''
+  - !!python/object:castro.PinConstraint
+    drive_strength: 0
+    io_standard: [LVCMOS18, LVCMOS18, LVCMOS18, LVCMOS18]
+    location: [H19, K24, E27, B16]
+    portname: adc4x16g_asnt_ctrl_0
+    portname_indices: [0, 1, 2, 3]
+    slew_rate: 0
+    symbolic_indices: [0, 1, 2, 3]
+    symbolic_name: adc4x16g_asnt_ctrl_0
+    termination: ''
+  - !!python/object:castro.PinConstraint
+    drive_strength: 0
+    io_standard: [null, null, null, null]
+    location: [AU53, AT51, AR53, AP51]
+    portname: gty0rxp_in
+    portname_indices: [0, 1, 2, 3]
+    slew_rate: 0
+    symbolic_indices: [8, 9, 10, 11]
+    symbolic_name: fmcp_gty_rx_p
+    termination: ''
+  - !!python/object:castro.PinConstraint
+    drive_strength: 0
+    io_standard: [LVCMOS18]
+    location: [H17]
+    portname: adc4x16g_mosi
+    portname_indices: *id001
+    slew_rate: 0
+    symbolic_indices: &id002 [0]
+    symbolic_name: adc4x16g_mosi
+    termination: ''
+  - !!python/object:castro.PinConstraint
+    drive_strength: 0
+    io_standard: [LVCMOS18]
+    location: [B22]
+    portname: adc4x16g_miso
+    portname_indices: *id001
+    slew_rate: 0
+    symbolic_indices: *id002
+    symbolic_name: adc4x16g_miso
+    termination: ''
+  - !!python/object:castro.PinConstraint
+    drive_strength: 0
+    io_standard: [LVCMOS18]
+    location: [G16]
+    portname: adc4x16g_sck
+    portname_indices: *id001
+    slew_rate: 0
+    symbolic_indices: *id002
+    symbolic_name: adc4x16g_sck
+    termination: ''
+  - !!python/object:castro.PinConstraint
+    drive_strength: 0
+    io_standard: [LVCMOS18, LVCMOS18, LVCMOS18, LVCMOS18]
+    location: [K21, E22, D22, B23]
+    portname: adc4x16g_sselb
+    portname_indices: [0, 1, 2, 3]
+    slew_rate: 0
+    symbolic_indices: [0, 1, 2, 3]
+    symbolic_name: adc4x16g_sselb
+    termination: ''
+  - !!python/object:castro.PinConstraint
+    drive_strength: 0
+    io_standard: [LVCMOS18]
+    location: [BH24]
+    portname: adc_snapshot_inside_gpio_ext
+    portname_indices: [0]
+    slew_rate: 0
+    symbolic_indices: [0]
+    symbolic_name: led
+    termination: ''
+  - !!python/object:castro.PinConstraint
+    drive_strength: 0
+    io_standard: [LVCMOS18]
+    location: [BL23]
+    portname: adc_snapshot_inside_one_gbe_dummy_port_in
+    portname_indices: *id001
+    slew_rate: 0
+    symbolic_indices: *id002
+    symbolic_name: gbe_phy_rx_bitslice
+    termination: ''
+  - !!python/object:castro.PinConstraint
+    drive_strength: 0
+    io_standard: [DIFF_HSTL_I_18]
+    location: [BG22]
+    portname: adc_snapshot_inside_one_gbe_tx_p
+    portname_indices: *id001
+    slew_rate: 0
+    symbolic_indices: *id002
+    symbolic_name: gbe_phy_sgmii_in_p
+    termination: ''
+  - !!python/object:castro.PinConstraint
+    drive_strength: 0
+    io_standard: [DIFF_HSTL_I_18]
+    location: [BH22]
+    portname: adc_snapshot_inside_one_gbe_tx_n
+    portname_indices: *id001
+    slew_rate: 0
+    symbolic_indices: *id002
+    symbolic_name: gbe_phy_sgmii_in_n
+    termination: ''
+  - !!python/object:castro.PinConstraint
+    drive_strength: 0
+    io_standard: [DIFF_HSTL_I_18]
+    location: [BJ22]
+    portname: adc_snapshot_inside_one_gbe_rx_p
+    portname_indices: *id001
+    slew_rate: 0
+    symbolic_indices: *id002
+    symbolic_name: gbe_phy_sgmii_out_p
+    termination: ''
+  - !!python/object:castro.PinConstraint
+    drive_strength: 0
+    io_standard: [DIFF_HSTL_I_18]
+    location: [BK21]
+    portname: adc_snapshot_inside_one_gbe_rx_n
+    portname_indices: *id001
+    slew_rate: 0
+    symbolic_indices: *id002
+    symbolic_name: gbe_phy_sgmii_out_n
+    termination: ''
+  - !!python/object:castro.PinConstraint
+    drive_strength: 0
+    io_standard: [LVCMOS18]
+    location: [BF22]
+    portname: phy_pdown_n
+    portname_indices: *id001
+    slew_rate: 0
+    symbolic_indices: *id002
+    symbolic_name: gbe_phy_power_down_n
+    termination: ''
+  - !!python/object:castro.PinConstraint
+    drive_strength: 0
+    io_standard: [LVCMOS18]
+    location: [BG23]
+    portname: phy_mdio
+    portname_indices: *id001
+    slew_rate: 0
+    symbolic_indices: *id002
+    symbolic_name: gbe_phy_mdio
+    termination: ''
+  - !!python/object:castro.PinConstraint
+    drive_strength: 0
+    io_standard: [LVCMOS18]
+    location: [BN27]
+    portname: phy_mdc
+    portname_indices: *id001
+    slew_rate: 0
+    symbolic_indices: *id002
+    symbolic_name: gbe_phy_mdc
+    termination: ''
+  - !!python/object:castro.PinConstraint
+    drive_strength: 0
+    io_standard: [DIFF_HSTL_I_18]
+    location: [BH27]
+    portname: adc_snapshot_inside_one_gbe_refclk625_p
+    portname_indices: *id001
+    slew_rate: 0
+    symbolic_indices: *id002
+    symbolic_name: gbe_phy_sgmii_clk_p
+    termination: ''
+  - !!python/object:castro.PinConstraint
+    drive_strength: 0
+    io_standard: [DIFF_HSTL_I_18]
+    location: [BJ27]
+    portname: adc_snapshot_inside_one_gbe_refclk625_n
+    portname_indices: *id001
+    slew_rate: 0
+    symbolic_indices: *id002
+    symbolic_name: gbe_phy_sgmii_clk_n
+    termination: ''
+  - !!python/object:castro.PinConstraint
+    drive_strength: 0
+    io_standard: [DIFF_SSTL12]
+    location: [F36]
+    portname: sys_clk_n
+    portname_indices: *id001
+    slew_rate: 0
+    symbolic_indices: *id002
+    symbolic_name: sys_clk_n
+    termination: ''
+  - !!python/object:castro.PinConstraint
+    drive_strength: 0
+    io_standard: [DIFF_SSTL12]
+    location: [F35]
+    portname: sys_clk_p
+    portname_indices: *id001
+    slew_rate: 0
+    symbolic_indices: *id002
+    symbolic_name: sys_clk_p
+    termination: ''
+  - !!python/object:castro.PinConstraint
+    drive_strength: 0
+    io_standard: [LVCMOS18]
+    location: [BP26]
+    portname: UART_rxd
+    portname_indices: *id001
+    slew_rate: 0
+    symbolic_indices: *id002
+    symbolic_name: usb_tx
+    termination: ''
+  - !!python/object:castro.PinConstraint
+    drive_strength: 0
+    io_standard: [LVCMOS18]
+    location: [BN26]
+    portname: UART_txd
+    portname_indices: *id001
+    slew_rate: 0
+    symbolic_indices: *id002
+    symbolic_name: usb_rx
+    termination: ''
+  pin_map:
+    adc4x16g_asnt_ctrl_0:
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: H19}
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: K24}
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: E27}
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: B16}
+    adc4x16g_asnt_ctrl_1:
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: H18}
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: A21}
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: J22}
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: D20}
+    adc4x16g_asnt_ctrl_2:
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: H27}
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: E18}
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: E21}
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: D21}
+    adc4x16g_asnt_ctrl_3:
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: A25}
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: G27}
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: E26}
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: D26}
+    adc4x16g_miso:
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: B22}
+    adc4x16g_mosi:
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: H17}
+    adc4x16g_sck:
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: G16}
+    adc4x16g_sselb:
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: K21}
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: E22}
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: D22}
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: B23}
+    eth_clk_n:
+    - !!python/object:casper_platform.Pin {iostd: null, loc: CKOUT1_N}
+    eth_clk_p:
+    - !!python/object:casper_platform.Pin {iostd: null, loc: CKOUT1_P}
+    fmcp_gty_clk_n:
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AV43}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AR41}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AN41}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AL41}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AJ41}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AG41}
+    fmcp_gty_clk_p:
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AV42}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AR40}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AN40}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AL40}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AJ40}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AG40}
+    fmcp_gty_rx_n:
+    - !!python/object:casper_platform.Pin {iostd: null, loc: BC54}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: BB52}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: BA54}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: BA50}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AY52}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AW54}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AW50}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AV52}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AU54}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AT52}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AR54}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AP52}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AN54}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AN50}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AM52}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AL54}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AL50}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AK52}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AJ54}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AH52}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AG54}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AF52}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AE54}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AE50}
+    fmcp_gty_rx_p:
+    - !!python/object:casper_platform.Pin {iostd: null, loc: BC53}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: BB51}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: BA53}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: BA49}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AY51}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AW53}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AW49}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AV51}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AU53}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AT51}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AR53}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AP51}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AN53}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AN49}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AM51}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AL53}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AL49}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AK51}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AJ53}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AH51}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AG53}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AF51}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AE53}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AE49}
+    fmcp_gty_tx_n:
+    - !!python/object:casper_platform.Pin {iostd: null, loc: BC49}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: BC45}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: BB47}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: BA45}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AY47}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AW45}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AV47}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AU45}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AU49}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AT47}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AR49}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AR45}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AP47}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AN45}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AM47}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AL45}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AK47}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AJ49}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AJ45}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AH47}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AG49}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AG45}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AF47}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AE45}
+    fmcp_gty_tx_p:
+    - !!python/object:casper_platform.Pin {iostd: null, loc: BC48}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: BC44}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: BB46}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: BA44}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AY46}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AW44}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AV46}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AU44}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AU48}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AT46}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AR48}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AR44}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AP46}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AN44}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AM46}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AL44}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AK46}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AJ48}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AJ44}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AH46}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AG48}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AG44}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AF46}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AE44}
+    gbe_phy_clk_out:
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: BJ23}
+    gbe_phy_gpio:
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: BP27}
+    gbe_phy_mdc:
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: BN27}
+    gbe_phy_mdio:
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: BG23}
+    gbe_phy_power_down_n:
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: BF22}
+    gbe_phy_rx_bitslice:
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: BL23}
+    gbe_phy_sgmii_clk_n:
+    - !!python/object:casper_platform.Pin {iostd: DIFF_HSTL_I_18, loc: BJ27}
+    gbe_phy_sgmii_clk_p:
+    - !!python/object:casper_platform.Pin {iostd: DIFF_HSTL_I_18, loc: BH27}
+    gbe_phy_sgmii_in_n:
+    - !!python/object:casper_platform.Pin {iostd: DIFF_HSTL_I_18, loc: BH22}
+    gbe_phy_sgmii_in_p:
+    - !!python/object:casper_platform.Pin {iostd: DIFF_HSTL_I_18, loc: BG22}
+    gbe_phy_sgmii_out_n:
+    - !!python/object:casper_platform.Pin {iostd: DIFF_HSTL_I_18, loc: BK21}
+    gbe_phy_sgmii_out_p:
+    - !!python/object:casper_platform.Pin {iostd: DIFF_HSTL_I_18, loc: BJ22}
+    led:
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: BH24}
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: BG24}
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: BG25}
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: BF25}
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: BF26}
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: BF27}
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: BG27}
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: BG28}
+    mgt_rx_n:
+    - !!python/object:casper_platform.Pin {iostd: null, loc: RX1N}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: RX2N}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: RX3N}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: RX4N}
+    mgt_rx_p:
+    - !!python/object:casper_platform.Pin {iostd: null, loc: RX1P}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: RX2P}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: RX3P}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: RX4P}
+    mgt_tx_n:
+    - !!python/object:casper_platform.Pin {iostd: null, loc: TX1N}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: TX2N}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: TX3N}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: TX4N}
+    mgt_tx_p:
+    - !!python/object:casper_platform.Pin {iostd: null, loc: TX1P}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: TX2P}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: TX3P}
+    - !!python/object:casper_platform.Pin {iostd: null, loc: TX4P}
+    qsfp1_clk156_n:
+    - !!python/object:casper_platform.Pin {iostd: null, loc: P43}
+    qsfp1_clk156_p:
+    - !!python/object:casper_platform.Pin {iostd: null, loc: P42}
+    qsfp2_clk156_n:
+    - !!python/object:casper_platform.Pin {iostd: null, loc: T43}
+    qsfp2_clk156_p:
+    - !!python/object:casper_platform.Pin {iostd: null, loc: T42}
+    qsfp3_clk156_n:
+    - !!python/object:casper_platform.Pin {iostd: null, loc: Y43}
+    qsfp3_clk156_p:
+    - !!python/object:casper_platform.Pin {iostd: null, loc: Y42}
+    qsfp4_clk156_n:
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AB43}
+    qsfp4_clk156_p:
+    - !!python/object:casper_platform.Pin {iostd: null, loc: AB42}
+    sfp_disable:
+    - !!python/object:casper_platform.Pin {iostd: null, loc: RESETL}
+    spi_flash_clk:
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: BD14}
+    spi_flash_csn:
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: BC15}
+    spi_flash_data:
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: AW15}
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: AY15}
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: AY14}
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: AY13}
+    sys_clk_n:
+    - !!python/object:casper_platform.Pin {iostd: DIFF_SSTL12, loc: F36}
+    sys_clk_p:
+    - !!python/object:casper_platform.Pin {iostd: DIFF_SSTL12, loc: F35}
+    usb_rx:
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: BN26}
+    usb_tx:
+    - !!python/object:casper_platform.Pin {iostd: LVCMOS18, loc: BP26}
+  platform_name: vcu128
+  raw_constraints:
+  - !!python/object:castro.RawConstraint {raw: 'set_clock_groups -name asyncclocks_eth0
+      -asynchronous -group [get_clocks -include_generated_clocks sys_clk_p_CLK] -group
+      [get_clocks -include_generated_clocks adcclk0]
+
+      '}
+  - !!python/object:castro.RawConstraint {raw: 'set_property CONFIG_VOLTAGE 1.8 [current_design]
+
+      '}
+  synth_tool: ''
+  temp_fpga_model: ''
+  temp_quartus_qsf_files: []
+  vendor_constraints_files: ''
+version: 0.0.0
